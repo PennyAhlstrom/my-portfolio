@@ -8,10 +8,8 @@ export default function FeaturedProjects() {
     <Section className="py-20">
       <Container>
         <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-semibold">Featured Projects</h2>
-        {/* <SectionHeader>Featured Projects</SectionHeader> 
-        NOTE: Not using this here because too dark for background - this needs some work to make sure 
-        I can use section headign everywhere without problem*/}
+          {/* <h2 className="text-2xl font-semibold">Featured Projects</h2> */}
+        <SectionHeader variant="light">Featured Projects</SectionHeader> 
 
           <Link
             href="/projects"
