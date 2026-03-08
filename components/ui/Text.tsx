@@ -1,11 +1,13 @@
 type TextProps = {
   children: React.ReactNode;
   variant?: "light" | "dark" | "muted";
+  as?: "p" | "li" | "span";
 };
 
 export default function Text({
   children,
   variant = "dark",
+  as = "p",
 }: TextProps) {
 
   const variants = {
@@ -15,10 +17,12 @@ export default function Text({
   };
 
   const color = variants[variant];
+  
+  const Component = as;
 
   return (
-    <p className={`text-base leading-relaxed ${color}`}>
+    <Component className={`text-base leading-relaxed ${color}`}>
       {children}
-    </p>
+    </Component>
   );
 }
