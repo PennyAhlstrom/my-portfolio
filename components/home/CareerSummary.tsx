@@ -1,4 +1,4 @@
-import Section from "@/components/ui/SectionWrapper"
+import Section from "@/components/ui/SectionWrapper";
 import Container from "@/components/layout/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
 
