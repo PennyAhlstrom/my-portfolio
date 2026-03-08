@@ -1,11 +1,11 @@
 import Container from "@/components/layout/Container";
-import SectionHeading from "@/components/ui/SectionHeading";
+import SectionHeader from "@/components/ui/SectionHeader";
 
 export default function CareerSummary() {
   return (
     <section className="py-16 bg-gray-50">
       <Container>
-        <SectionHeading>Career Summary</SectionHeading>
+        <SectionHeader>Career Summary</SectionHeader>
         {/* <h2 className="text-2xl font-semibold">Career Summary</h2> */}
 
         <ul className="mt-6 space-y-3 text-gray-700">

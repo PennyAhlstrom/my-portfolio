@@ -1,5 +1,5 @@
 import Container from "@/components/layout/Container";
-import SectionHeading from "@/components/ui/SectionHeading";
+import SectionHeader from "@/components/ui/SectionHeader";
 import Link from "next/link";
 
 export default function FeaturedProjects() {
@@ -8,7 +8,7 @@ export default function FeaturedProjects() {
       <Container>
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-semibold">Featured Projects</h2>
-        {/* <SectionHeading>Featured Projects</SectionHeading> 
+        {/* <SectionHeader>Featured Projects</SectionHeader> 
         NOTE: Not using this here because too dark for background - this needs some work to make sure 
         I can use section headign everywhere without problem*/}
 
