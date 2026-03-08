@@ -1,5 +1,6 @@
-import Section from "@/components/ui/SectionWrapper"
+import Section from "@/components/ui/SectionWrapper";
 import Container from "@/components/layout/Container";
+import Text from "@/components/ui/Text";
 
 export default function Banner() {
   return (
@@ -9,10 +10,10 @@ export default function Banner() {
           Penny Ahlstrom
         </h1>
 
-        <p className="mt-6 max-w-2xl text-lg text-gray-700">
+        <Text variant="muted">
           Software developer focused on building practical solutions that improve
           workflows, solve real problems, and make technology easier to use.
-        </p>
+        </Text>
       </Container>
     </Section>
   );
