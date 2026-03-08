@@ -1,10 +1,11 @@
+import Section from "@/components/ui/SectionWrapper"
 import Container from "@/components/layout/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Link from "next/link";
 
 export default function ContactSection() {
   return (
-    <section className="py-20 bg-gray-50">
+    <Section className="py-20 bg-gray-50">
       <Container>
         <SectionHeader>Get in Touch</SectionHeader>
         {/* <h2 className="text-2xl font-semibold">Get in Touch</h2> */}
@@ -23,6 +24,6 @@ export default function ContactSection() {
           </Link>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

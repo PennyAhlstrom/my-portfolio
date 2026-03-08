@@ -1,9 +1,10 @@
+import Section from "@/components/ui/SectionWrapper"
 import Container from "@/components/layout/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
 
 export default function CareerSummary() {
   return (
-    <section className="py-16 bg-gray-50">
+    <Section className="py-16 bg-gray-50">
       <Container>
         <SectionHeader>Career Summary</SectionHeader>
         {/* <h2 className="text-2xl font-semibold">Career Summary</h2> */}
@@ -35,6 +36,6 @@ export default function CareerSummary() {
           </li>
         </ul>
       </Container>
-    </section>
+    </Section>
   );
 }

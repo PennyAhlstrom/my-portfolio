@@ -1,8 +1,9 @@
+import Section from "@/components/ui/SectionWrapper"
 import Container from "@/components/layout/Container";
 
 export default function Banner() {
   return (
-    <section className="py-24">
+    <Section className="py-24">
       <Container>
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
           Penny Ahlstrom
@@ -13,6 +14,6 @@ export default function Banner() {
           workflows, solve real problems, and make technology easier to use.
         </p>
       </Container>
-    </section>
+    </Section>
   );
 }

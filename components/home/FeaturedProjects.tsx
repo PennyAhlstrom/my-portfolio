@@ -1,10 +1,11 @@
+import Section from "@/components/ui/SectionWrapper"
 import Container from "@/components/layout/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Link from "next/link";
 
 export default function FeaturedProjects() {
   return (
-    <section className="py-20">
+    <Section className="py-20">
       <Container>
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-semibold">Featured Projects</h2>
@@ -40,6 +41,6 @@ export default function FeaturedProjects() {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }
