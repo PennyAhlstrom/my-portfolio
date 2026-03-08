@@ -1,14 +1,24 @@
-type SectionHeaderProps = {
+type SectionHeadingProps = {
   children: React.ReactNode;
-  className?: string;
+  variant?: "light" | "dark"; // current options for variants - this can be expanded if more options are needed
 };
 
-export default function SectionHeader({
+export default function SectionHeading({
   children,
-  className = "",
-}: SectionHeaderProps) {
+  variant = "dark", // Dark is default if no variant is specified
+}: SectionHeadingProps) {
+
+  // Explicitly define each variant to keep the code scalable
+  const variants = {
+    light: "text-white",
+    dark: "text-gray-900",
+  };
+
+  const color = variants[variant];
+
   return (
-    <h2 className={`text-2xl font-semibold tracking-tight text-gray-900 ${className}`}>
+    // Responsive size
+    <h2 className={`text-2xl md:text-3xl font-semibold tracking-tight ${color}`}>
       {children}
     </h2>
   );
