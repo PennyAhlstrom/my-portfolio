@@ -2,12 +2,14 @@ type TextProps = {
   children: React.ReactNode;
   variant?: "light" | "dark" | "muted";
   as?: "p" | "li" | "span";
+  className?: string;
 };
 
 export default function Text({
   children,
   variant = "dark",
   as = "p",
+  className = "",
 }: TextProps) {
 
   const variants = {
