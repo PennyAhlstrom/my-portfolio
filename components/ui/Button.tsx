@@ -1,9 +1,12 @@
+import Link from "next/link" // Enables client-side navigation - faster than using <a>
+
 type ButtonProps = {
   children: React.ReactNode
   href?: string
   onClick?: () => void
   variant?: "primary" | "secondary"
   theme?: "light" | "dark"
+  size?: "sm" | "md" | "lg"
   className?: string
 }
 
@@ -13,6 +16,7 @@ export default function Button({
   onClick,
   variant = "primary",
   theme = "dark", // Default
+  size = "md",
   className = "",
 }: ButtonProps) {
     
@@ -30,21 +34,24 @@ export default function Button({
         },
     }
 
-    const variantStyles = variants[theme][variant]
+    const sizes = {
+        sm: "px-3 py-2 text-sm",
+        md: "px-5 py-3 text-sm",
+        lg: "px-6 py-4 text-base",
+    }
 
-
-    const combinedClassName = `${baseStyles} ${variantStyles} ${className}`
+    const styles = `${baseStyles} ${sizes[size]} ${variants[theme][variant]} ${className}`
 
     if (href) {
         return (
-        <a href={href} className={combinedClassName}>
+        <a href={href} className={styles}>
             {children}
         </a>
         )
     }
 
     return (
-        <button onClick={onClick} className={combinedClassName}>
+        <button onClick={onClick} className={styles}>
         {children}
         </button>
   )
