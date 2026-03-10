@@ -3,7 +3,7 @@ import Container from "@/components/layout/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Card from "@/components/ui/Card";
 import Text from "@/components/ui/Text";
-import Link from "next/link";
+import AppLink from "@/components/ui/AppLink"
 
 export default function FeaturedProjects() {
   return (
@@ -13,12 +13,12 @@ export default function FeaturedProjects() {
           {/* <h2 className="text-2xl font-semibold">Featured Projects</h2> */}
         <SectionHeader variant="light">Featured Projects</SectionHeader> 
 
-          <Link
+          <AppLink
             href="/projects"
             className="text-sm font-medium text-gray-700 hover:text-black"
           >
             View all projects →
-          </Link>
+          </AppLink>
         </div>
 
         <div className="mt-10 grid gap-8 md:grid-cols-2">
