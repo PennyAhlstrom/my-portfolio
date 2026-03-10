@@ -34,7 +34,12 @@ export default function Card({
 
   const content = (
     <>
-      {image && (
+
+
+      <div className="p-6">
+        <h3 className="text-lg font-semibold">{title}</h3>
+        <div className="mt-3">{children}</div>
+              {image && (
         <div className="relative h-48 w-full">
           <Image
             src={image}
@@ -44,11 +49,8 @@ export default function Card({
           />
         </div>
       )}
-
-      <div className="p-6">
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <div className="mt-3">{children}</div>
       </div>
+      
     </>
   )
 
