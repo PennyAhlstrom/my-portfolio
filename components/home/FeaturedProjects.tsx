@@ -22,14 +22,26 @@ export default function FeaturedProjects() {
         </div>
 
         <div className="mt-10 grid gap-8 md:grid-cols-2">
-           <Card title="Gomoku AI" variant="light" href="/projects/gomoku-ai">
+           <Card
+              title="Gomoku AI"
+              variant="light"
+              href="/projects/gomoku-ai"
+              image="/images/gomoku-ai.jpg"
+              imageAlt="Screenshot of Gomoku AI project"
+           >
             <Text className="mt-3">
               Java implementation of the Gomoku board game with an AI opponent
               using search algorithms and heuristic evaluation.
             </Text>
           </Card>
 
-            <Card title="Portfolio Website" variant="light" href="/projects/portfolio-website">
+            <Card
+              title="Portfolio Website"
+              variant="light"
+              href="/projects/portfolio-website"
+              image="/images/portfolio-website.jpg"
+              imageAlt="Screenshot of portfolio website"
+            >
             <Text className="mt-3">
               Professional portfolio built with Next.js and Tailwind to showcase
               projects, research, and technical experience.
