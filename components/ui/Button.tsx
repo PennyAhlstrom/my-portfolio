@@ -8,6 +8,8 @@ type ButtonProps = {
   theme?: "light" | "dark"
   size?: "sm" | "md" | "lg"
   className?: string
+  icon?: React.ReactNode
+  external?: boolean
 }
 
 export default function Button({
@@ -18,6 +20,8 @@ export default function Button({
   theme = "dark", // Default
   size = "md",
   className = "",
+  icon,
+  external = false,
 }: ButtonProps) {
     
     const baseStyles =
@@ -42,11 +46,31 @@ export default function Button({
 
     const styles = `${baseStyles} ${sizes[size]} ${variants[theme][variant]} ${className}`
 
+    const content = (
+    <>
+      {icon && <span className="flex-shrink-0">{icon}</span>}
+      <span>{children}</span>
+    </>
+  )
+
     if (href) {
+        if (external) {
         return (
-        <a href={href} className={styles}>
-            {children}
-        </a>
+            <a
+            href={href}
+            className={styles}
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            {content}
+            </a>
+        )
+        }
+
+        return (
+        <Link href={href} className={styles}>
+            {content}
+        </Link>
         )
     }
 
