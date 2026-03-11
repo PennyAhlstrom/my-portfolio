@@ -13,7 +13,7 @@ export default function AppLink({
   href,
   children,
   variant = "muted",
-  arrow = true,
+  arrow = false,
   external = false,
   className = "",
 }: AppLinkProps) {
