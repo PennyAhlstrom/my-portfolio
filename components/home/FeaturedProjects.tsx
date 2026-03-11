@@ -15,9 +15,9 @@ export default function FeaturedProjects() {
 
           <AppLink
             href="/projects"
-            className="text-sm font-medium text-gray-700 hover:text-black"
+            arrow
           >
-            View all projects →
+            View all projects
           </AppLink>
         </div>
 
