@@ -25,15 +25,15 @@ export default function Button({
 }: ButtonProps) {
     
     const baseStyles =
-    "inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium transition"
+  "inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
 
     const variants = {
         dark: {
-        primary: "bg-white text-black hover:opacity-90",
+        primary: "bg-white text-black hover:opacity-70",
         secondary: "border border-white/20 text-white hover:bg-white/10",
         },
         light: {
-        primary: "bg-black text-white hover:opacity-90",
+        primary: "bg-black text-white hover:opacity-70",
         secondary: "border border-gray-300 text-gray-900 hover:bg-gray-100",
         },
     }
