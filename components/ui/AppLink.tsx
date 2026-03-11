@@ -3,25 +3,52 @@ import Link from "next/link"
 type AppLinkProps = {
   href: string
   children: React.ReactNode
-  variant?: "default" | "muted" | "light"
+  variant?: "dark" | "light" | "muted"
+  arrow?: boolean
+  external?: boolean
   className?: string
 }
 
 export default function AppLink({
   href,
   children,
-  variant = "default",
+  variant = "muted",
+  arrow = false,
+  external = false,
   className = "",
 }: AppLinkProps) {
+
   const variants = {
-    default: "text-sm font-medium text-gray-700 hover:text-black",
+    dark: "text-sm font-medium text-gray-700 hover:text-white",
+    light: "text-sm font-medium text-gray-200 hover:text-black",
     muted: "text-sm text-gray-500 hover:text-gray-700",
-    light: "text-sm font-medium text-gray-200 hover:text-white",
+  }
+
+  const styles = `${variants[variant]} ${className}`
+
+  const content = (
+    <>
+      {children}
+      {arrow && <span className="ml-1">→</span>}
+    </>
+  )
+
+  if (external) {
+    return (
+      <a
+        href={href}
+        className={styles}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {content}
+      </a>
+    )
   }
 
   return (
-    <Link href={href} className={`${variants[variant]} ${className}`}>
-      {children}
+    <Link href={href} className={styles}>
+      {content}
     </Link>
   )
 }
