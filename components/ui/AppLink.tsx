@@ -6,6 +6,7 @@ type AppLinkProps = {
   variant?: "dark" | "light" | "muted"
   arrow?: boolean
   external?: boolean
+  newTab?: boolean
   className?: string
   onClick?: () => void
 }
@@ -16,6 +17,7 @@ export default function AppLink({
   variant = "muted",
   arrow = false,
   external = false,
+  newTab = false,
   className = "",
   onClick,
 }: AppLinkProps) {
@@ -27,6 +29,7 @@ export default function AppLink({
   }
 
   const styles = `${variants[variant]} ${className}`
+  // const styles = `inline-flex items-center group ${variants[variant]} ${className}` // check if this looks nicer
 
   const content = (
     <>
@@ -35,7 +38,7 @@ export default function AppLink({
     </>
   )
 
-  if (external) {
+  if (external || newTab) {
     return (
       <a
         href={href}
