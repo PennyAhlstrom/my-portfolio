@@ -1,3 +1,14 @@
+// import ContactDetailsSection from "@/components/contact/ContactDetailsSection";
+
+// export default function ContactPage() {
+//   return (
+//     <>
+//       <ContactDetailsSection />
+//     </>
+//   );
+// }
+
+
 import Section from "@/components/ui/SectionWrapper";
 import Container from "@/components/layout/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
