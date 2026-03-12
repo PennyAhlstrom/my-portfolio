@@ -1,6 +1,6 @@
 type SectionHeadingProps = {
   children: React.ReactNode;
-  variant?: "light" | "dark"; // current options for variants - this can be expanded if more options are needed
+  variant?: "light" | "dark" | "muted"; // current options for variants - can be expanded
 };
 
 export default function SectionHeading({
@@ -12,6 +12,7 @@ export default function SectionHeading({
   const variants = {
     light: "text-white",
     dark: "text-gray-900",
+    muted: "text-gray-500",
   };
 
   const color = variants[variant];
