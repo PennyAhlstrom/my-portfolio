@@ -28,15 +28,26 @@ export default function AppLink({
     muted: "text-sm text-gray-500 hover:text-gray-700",
   }
 
-  const styles = `${variants[variant]} ${className}`
+  // const styles = `${variants[variant]} ${className}` // OG version
   // const styles = `inline-flex items-center group ${variants[variant]} ${className}` // check if this looks nicer
+
+  const styles = `inline-flex items-center transition-colors duration-200 ${variants[variant]} ${className}` // Smoother transitions?
+
+
+  // const content = ( // OG version
+  //   <>
+  //     {children}
+  //     {arrow && <span className="ml-1">→</span>}
+  //   </>
+  // )
 
   const content = (
     <>
-      {children}
+      <span>{children}</span>
       {arrow && <span className="ml-1">→</span>}
     </>
-  )
+  ) // Nicer layout?
+
 
   if (external || newTab) {
     return (
