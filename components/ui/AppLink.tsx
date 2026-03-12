@@ -5,6 +5,7 @@ type AppLinkProps = {
   children: React.ReactNode
   variant?: "dark" | "light" | "muted"
   arrow?: boolean
+  direction?: "forward" | "back"
   external?: boolean
   newTab?: boolean
   className?: string
@@ -16,6 +17,7 @@ export default function AppLink({
   children,
   variant = "muted",
   arrow = false,
+  direction = "forward",
   external = false,
   newTab = false,
   className = "",
@@ -33,7 +35,13 @@ export default function AppLink({
 
   const styles = `inline-flex items-center transition-colors duration-200 ${variants[variant]} ${className}` // Smoother transitions?
 
+  const arrowSymbol = direction === "back" ? "←" : "→"
+  const arrowClass =
+    direction === "back"
+      ? "mr-1 transition-transform duration-200 group-hover:-translate-x-1"
+      : "ml-1 transition-transform duration-200 group-hover:translate-x-1"
 
+      
   // const content = ( // OG version
   //   <>
   //     {children}
@@ -41,12 +49,24 @@ export default function AppLink({
   //   </>
   // )
 
+  // const content = (
+  //   <>
+  //     <span>{children}</span>
+  //     {arrow && <span className="ml-1">→</span>}
+  //   </>
+  // ) // Nicer layout?
+
   const content = (
     <>
+      {arrow && direction === "back" && (
+        <span className={arrowClass}>{arrowSymbol}</span>
+      )}
       <span>{children}</span>
-      {arrow && <span className="ml-1">→</span>}
+      {arrow && direction === "forward" && (
+        <span className={arrowClass}>{arrowSymbol}</span>
+      )}
     </>
-  ) // Nicer layout?
+  )
 
 
   if (external || newTab) {
