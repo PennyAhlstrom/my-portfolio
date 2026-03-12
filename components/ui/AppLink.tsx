@@ -7,6 +7,7 @@ type AppLinkProps = {
   arrow?: boolean
   external?: boolean
   className?: string
+  onClick?: () => void
 }
 
 export default function AppLink({
@@ -16,6 +17,7 @@ export default function AppLink({
   arrow = false,
   external = false,
   className = "",
+  onClick,
 }: AppLinkProps) {
 
   const variants = {
@@ -40,6 +42,7 @@ export default function AppLink({
         className={styles}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={onClick}
       >
         {content}
       </a>
@@ -47,7 +50,7 @@ export default function AppLink({
   }
 
   return (
-    <Link href={href} className={styles}>
+    <Link href={href} className={styles} onClick={onClick}>
       {content}
     </Link>
   )
