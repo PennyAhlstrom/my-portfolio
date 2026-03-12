@@ -5,6 +5,8 @@ export const projects = [
     description:
       "Java implementation of the Gomoku board game with an AI opponent using search algorithms and heuristic evaluation.",
     tech: ["Java", "AI", "Search Algorithms"],
+    content:
+      "This project explores game logic, turn handling, and AI decision making using search-based strategies.",
   },
   {
     title: "Portfolio Website",
@@ -12,5 +14,7 @@ export const projects = [
     description:
       "Professional portfolio built with Next.js and Tailwind to showcase projects, research, and technical experience.",
     tech: ["Next.js", "Tailwind", "React"],
+    content:
+      "This project focuses on reusable UI components, page composition, responsive layout, and clean portfolio presentation.",
   },
 ]

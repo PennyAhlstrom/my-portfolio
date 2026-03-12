@@ -5,6 +5,8 @@ export const demos = [
     description:
       "Video demonstration of the Gomoku AI project, including gameplay and search-based decision making.",
     tech: ["Java", "AI", "Demo"],
+    content:
+      "This demo walks through the gameplay, AI behavior, and overall structure of the Gomoku AI project.",
   },
   {
     title: "Portfolio Website Demo",
@@ -12,5 +14,7 @@ export const demos = [
     description:
       "Walkthrough of the portfolio website structure, reusable components, and responsive layout.",
     tech: ["Next.js", "Tailwind", "Demo"],
+    content:
+      "This demo explains the layout, reusable components, routing structure, and design decisions behind the portfolio site.",
   },
 ]
