@@ -1,11 +1,11 @@
 import ReferencesIntro from "@/components/references/ReferencesIntro";
-import ReferencesList from "@/components/references/ReferencesList";
+import ReferenceGrid from "@/components/references/ReferenceGrid";
 
 export default function ReferencesPage() {
   return (
     <>
       <ReferencesIntro />
-      <ReferencesList />
+      <ReferenceGrid />
     </>
   );
 }
