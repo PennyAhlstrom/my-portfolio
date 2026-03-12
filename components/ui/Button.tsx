@@ -8,6 +8,7 @@ type ButtonProps = {
   theme?: "light" | "dark"
   size?: "sm" | "md" | "lg"
   className?: string
+  newTab?: boolean
   icon?: React.ReactNode
   external?: boolean
 }
@@ -20,6 +21,7 @@ export default function Button({
   theme = "dark", // Default
   size = "md",
   className = "",
+  newTab = false,
   icon,
   external = false,
 }: ButtonProps) {
@@ -54,7 +56,7 @@ export default function Button({
   )
 
     if (href) {
-        if (external) {
+        if (external || newTab) {
         return (
             <a
             href={href}
@@ -76,7 +78,8 @@ export default function Button({
 
     return (
         <button onClick={onClick} className={styles}>
-        {children}
+        {/* {children} */}
+        {content}
         </button>
   )
 }
