@@ -26,7 +26,9 @@ export default function Navbar() {
   };
 
   return (
-    <header className="border-b border-gray-200 bg-white">
+    // <header className="border-b border-gray-200 bg-white"> // OG
+    //  <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur"> // without shadow
+    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 shadow-sm backdrop-blur">
       <Container className="min-h-16 py-4">
         <div className="flex items-center justify-between">
           <AppLink
@@ -44,11 +46,21 @@ export default function Navbar() {
                 <AppLink
                   key={link.href}
                   href={link.href}
-                  className={
+                  // className={ // OG
+                  //   isActive
+                  //     ? "!text-black border-b-2 border-black pb-1"
+                  //     : "border-b-2 border-transparent pb-1"
+                  // }
+                  // className={`relative pb-1 after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:bg-black after:transition-all after:duration-200 ${
+                  //   isActive
+                  //     ? "!text-black after:w-full"
+                  //     : "after:w-0 hover:after:w-full"
+                  // }`} //Slides in from the side - messy
+                  className={`relative pb-1 after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-full after:bg-black after:transition-opacity after:duration-200 ${
                     isActive
-                      ? "!text-black border-b-2 border-black pb-1"
-                      : "border-b-2 border-transparent pb-1"
-                  }
+                      ? "!text-black after:opacity-100"
+                      : "after:opacity-0 hover:after:opacity-100"
+                  }`}
                 >
                   {link.label}
                 </AppLink>
@@ -69,20 +81,22 @@ export default function Navbar() {
 
         {menuOpen && (
           <nav className="mt-4 flex flex-col gap-3 border-t border-gray-200 pt-4 md:hidden">
-            {navLinks.map((link) => {
-              const isActive = isActivePath(link.href);
-
-              return (
-                <AppLink
-                  key={link.href}
-                  href={link.href}
-                  className={isActive ? "!text-black font-semibold" : ""}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {link.label}
-                </AppLink>
-              );
-            })}
+            <div className="flex flex-col gap-3">
+              {navLinks.map((link) => {
+                const isActive = isActivePath(link.href);
+                
+                return (
+                  <AppLink
+                    key={link.href}
+                    href={link.href}
+                    className={isActive ? "!text-black font-semibold" : ""}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {link.label}
+                  </AppLink>
+                );
+              })}
+            </div>
           </nav>
         )}
       </Container>
