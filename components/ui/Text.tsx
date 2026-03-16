@@ -13,17 +13,17 @@ export default function Text({
 }: TextProps) {
 
   const variants = {
-    dark: "text-gray-700",
-    light: "text-gray-200",
-    muted: "text-gray-500",
+    dark: "text-foreground",
+    light: "text-white/90",
+    muted: "text-muted",
   };
 
   const color = variants[variant];
   
   const Component = as;
 
-  return (
-    <Component className={`text-base leading-relaxed ${color}`}>
+ return (
+    <Component className={`text-base leading-8 ${color} ${className}`}>
       {children}
     </Component>
   );
