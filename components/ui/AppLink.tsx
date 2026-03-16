@@ -25,10 +25,10 @@ export default function AppLink({
 }: AppLinkProps) {
 
   const variants = {
-    dark: "text-sm font-medium text-gray-700 hover:text-white",
-    light: "text-sm font-medium text-gray-200 hover:text-black",
-    muted: "text-sm text-gray-500 hover:text-gray-700",
-  }
+    dark: "text-sm font-medium text-foreground hover:text-accent",
+    light: "text-sm font-medium text-white/90 hover:text-white",
+    muted: "text-sm text-muted hover:text-foreground",
+  };
 
   // const styles = `${variants[variant]} ${className}` // OG version
   // const styles = `inline-flex items-center group ${variants[variant]} ${className}` // check if this looks nicer
@@ -38,42 +38,31 @@ export default function AppLink({
   const arrowSymbol = direction === "back" ? "←" : "→"
   const arrowClass =
     direction === "back"
-      ? "mr-1 transition-transform duration-200 group-hover:-translate-x-1"
-      : "ml-1 transition-transform duration-200 group-hover:translate-x-1"
-
-      
-  // const content = ( // OG version
-  //   <>
-  //     {children}
-  //     {arrow && <span className="ml-1">→</span>}
-  //   </>
-  // )
-
-  // const content = (
-  //   <>
-  //     <span>{children}</span>
-  //     {arrow && <span className="ml-1">→</span>}
-  //   </>
-  // ) // Nicer layout?
+      ? "transition-transform duration-200 group-hover:-translate-x-0.5"
+      : "transition-transform duration-200 group-hover:translate-x-0.5";
 
   const content = (
     <>
       {arrow && direction === "back" && (
-        <span className={arrowClass}>{arrowSymbol}</span>
+        <span aria-hidden="true" className={arrowClass}>
+          {arrowSymbol}
+        </span>
       )}
       <span>{children}</span>
       {arrow && direction === "forward" && (
-        <span className={arrowClass}>{arrowSymbol}</span>
+        <span aria-hidden="true" className={arrowClass}>
+          {arrowSymbol}
+        </span>
       )}
     </>
-  )
+  );
 
 
   if (external || newTab) {
     return (
       <a
         href={href}
-        className={styles}
+        className={`group ${styles}`}
         target="_blank"
         rel="noopener noreferrer"
         onClick={onClick}
@@ -84,7 +73,7 @@ export default function AppLink({
   }
 
   return (
-    <Link href={href} className={styles} onClick={onClick}>
+    <Link href={href} className={`group ${styles}`} onClick={onClick}>
       {content}
     </Link>
   )
