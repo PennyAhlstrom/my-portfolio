@@ -17,9 +17,9 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Card title={title} href={`/projects/${slug}`} variant="light">
-      <Text>{description}</Text>
+      <Text className="text-muted">{description}</Text>
 
-      <div className="mt-4 flex flex-wrap gap-2">
+      <div className="mt-5 flex flex-wrap gap-2">
         {tech.map((item) => (
           <TechBadge key={item}>{item}</TechBadge>
         ))}
