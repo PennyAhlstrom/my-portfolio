@@ -21,26 +21,21 @@ export default function Card({
   className = "",
 }: CardProps) {
 
-  const variants = {
-    light: "border border-gray-200 bg-white text-gray-900 shadow-sm",
-    dark: "border border-white/10 bg-white/5 text-white shadow-white/5",
-  }
+ const variants = {
+    light: "border border-border bg-surface text-foreground shadow-sm",
+    dark: "border border-white/10 bg-white/5 text-white shadow-sm",
+  };
 
   const interactiveStyles = href
-    ? "transition hover:-translate-y-1 hover:shadow-md"
-    : ""
+    ? "transition duration-200 hover:-translate-y-0.5 hover:shadow-md"
+    : "";
 
-  const styles = `rounded-2xl overflow-hidden ${variants[variant]} ${interactiveStyles} ${className}`
+  const styles = `overflow-hidden rounded-2xl ${variants[variant]} ${interactiveStyles} ${className}`;
 
-  const content = (
+ const content = (
     <>
-
-
-      <div className="p-6">
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <div className="mt-3">{children}</div>
-              {image && (
-        <div className="relative h-48 w-full">
+      {image && (
+        <div className="relative h-48 w-full border-b border-border/70">
           <Image
             src={image}
             alt={imageAlt || title}
@@ -49,10 +44,17 @@ export default function Card({
           />
         </div>
       )}
+
+      <div className="p-6 md:p-8">
+        <h3 className="font-serif text-xl font-semibold tracking-[-0.02em]">
+          {title}
+        </h3>
+
+        <div className="mt-3">{children}</div>
       </div>
-      
     </>
-  )
+  );
+
 
   if (href) {
     return (
