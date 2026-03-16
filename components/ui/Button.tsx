@@ -1,16 +1,16 @@
 import Link from "next/link" // Enables client-side navigation - faster than using <a>
 
 type ButtonProps = {
-  children: React.ReactNode
-  href?: string
-  onClick?: () => void
-  variant?: "primary" | "secondary"
-  theme?: "light" | "dark"
-  size?: "sm" | "md" | "lg"
-  className?: string
-  newTab?: boolean
-  icon?: React.ReactNode
-  external?: boolean
+  children: React.ReactNode;
+  href?: string;
+  onClick?: () => void;
+  variant?: "primary" | "secondary";
+  theme?: "light" | "dark";
+  size?: "sm" | "md" | "lg";
+  className?: string;
+  newTab?: boolean;
+  icon?: React.ReactNode;
+  external?: boolean;
 }
 
 export default function Button({
@@ -18,7 +18,7 @@ export default function Button({
   href,
   onClick,
   variant = "primary",
-  theme = "dark", // Default
+  theme = "light", // Default
   size = "md",
   className = "",
   newTab = false,
@@ -27,18 +27,22 @@ export default function Button({
 }: ButtonProps) {
     
     const baseStyles =
-  "inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
-
-    const variants = {
-        dark: {
-        primary: "bg-white text-black hover:opacity-70",
-        secondary: "border border-white/20 text-white hover:bg-white/10",
-        },
-        light: {
-        primary: "bg-black text-white hover:opacity-70",
-        secondary: "border border-gray-300 text-gray-900 hover:bg-gray-100",
-        },
-    }
+  // "inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md" // with shadow
+    "inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 hover:-translate-y-0.5";
+   const variants = {
+    light: {
+      primary:
+        "border border-foreground bg-foreground text-white hover:border-accent hover:bg-accent",
+      secondary:
+        "border border-border bg-surface text-foreground hover:border-foreground hover:bg-white",
+    },
+    dark: {
+      primary:
+        "border border-white bg-white text-foreground hover:bg-white/90",
+      secondary:
+        "border border-white/20 bg-transparent text-white hover:border-white/40 hover:bg-white/10",
+    },
+  };
 
     const sizes = {
         sm: "px-3 py-2 text-sm",
@@ -77,8 +81,7 @@ export default function Button({
     }
 
     return (
-        <button onClick={onClick} className={styles}>
-        {/* {children} */}
+        <button type="button" onClick={onClick} className={styles}>
         {content}
         </button>
   )
