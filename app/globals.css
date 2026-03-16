@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f4ee;
-  --surface: #fcfaf7;
+ --background: #f7f4ee;   /* page background */
+  --panel: #ffffff;        /* light section panel */
+  --panel-dark: #efe7dc;   /* darker beige section */
+  --surface: #f1ece3;      /* inner cards */
+  
   --foreground: #1f1f1b;
   --muted: #5f5a52;
   --border: #d9d3c8;
@@ -14,6 +17,8 @@
 
 @theme inline {
   --color-background: var(--background);
+  --color-panel: var(--panel);
+  --color-panel-dark: var(--panel-dark);
   --color-surface: var(--surface);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
