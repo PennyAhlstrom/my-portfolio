@@ -4,7 +4,7 @@ import Container from "@/components/layout/Container";
 import AppLink from "@/components/ui/AppLink";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Text from "@/components/ui/Text";
-import TechBadge from "@/components/projects/TechBadge";
+import TechBadge from "@/components/tech/TechBadge";
 import { demos } from "@/components/demos/DemoData";
 
 type DemoPageProps = {
