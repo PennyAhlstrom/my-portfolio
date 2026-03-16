@@ -1,13 +1,9 @@
-import Section from "@/components/ui/SectionWrapper";
-import Container from "@/components/layout/Container";
 import DemoCard from "@/components/demos/DemoCard";
 import { demos } from "@/components/demos/DemoData";
 
 export default function DemoGrid() {
   return (
-    <Section className="bg-gray-50">
-      <Container>
-        <div className="grid gap-8 md:grid-cols-2">
+      <div className="mt-10 grid gap-y-10 gap-x-8 md:grid-cols-2">
           {demos.map((demo) => (
             <DemoCard
               key={demo.slug}
@@ -18,7 +14,5 @@ export default function DemoGrid() {
             />
           ))}
           </div>
-      </Container>
-    </Section>
   );
 }
