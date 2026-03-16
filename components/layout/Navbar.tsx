@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Container from "./Container";
 import AppLink from "@/components/ui/AppLink";
@@ -28,17 +29,30 @@ export default function Navbar() {
   return (
     // <header className="border-b border-gray-200 bg-white"> // OG
     //  <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur"> // without shadow
-    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 shadow-sm backdrop-blur">
-      <Container className="min-h-16 py-4">
+    // <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 shadow-sm backdrop-blur"> // without shadow
+      <header className="sticky top-0 z-50 border-b border-border bg-white">
+      <Container className="min-h-16 py-6">
         <div className="flex items-center justify-between">
           <AppLink
             href="/"
-            className="text-lg font-semibold tracking-tight text-gray-900 hover:text-black"
+            // className="font-serif text-xl font-semibold tracking-[-0.02em] text-foreground no-underline hover:text-accent"
+            className="flex items-center gap-3 font-serif text-xl font-semibold tracking-[-0.02em] text-foreground no-underline hover:text-accent"
           >
-            Penny Ahlstrom
+            <span className="relative h-8 w-8 overflow-hidden rounded-full border border-border bg-surface">
+              <Image
+                src="/profile.jpg"
+                alt="Penny Ahlstrom"
+                fill
+                className="object-cover"
+                sizes="36px"
+                priority
+              />
+            </span>
+
+            <span>Penny Ahlstrom</span>
           </AppLink>
 
-          <nav className="hidden items-center gap-6 md:flex">
+          <nav className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => {
               const isActive = isActivePath(link.href);
 
@@ -46,20 +60,10 @@ export default function Navbar() {
                 <AppLink
                   key={link.href}
                   href={link.href}
-                  // className={ // OG
-                  //   isActive
-                  //     ? "!text-black border-b-2 border-black pb-1"
-                  //     : "border-b-2 border-transparent pb-1"
-                  // }
-                  // className={`relative pb-1 after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:bg-black after:transition-all after:duration-200 ${
-                  //   isActive
-                  //     ? "!text-black after:w-full"
-                  //     : "after:w-0 hover:after:w-full"
-                  // }`} //Slides in from the side - messy
-                  className={`relative pb-1 after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-full after:bg-black after:transition-opacity after:duration-200 ${
+                  className={`relative pb-1 text-sm tracking-[0.02em] no-underline transition-colors after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-full after:bg-foreground after:transition-opacity after:duration-200 ${
                     isActive
-                      ? "!text-black after:opacity-100"
-                      : "after:opacity-0 hover:after:opacity-100"
+                      ? "text-foreground after:opacity-100"
+                      : "text-muted after:opacity-0 hover:text-foreground hover:after:opacity-100"
                   }`}
                 >
                   {link.label}
@@ -71,16 +75,16 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden rounded-md border border-gray-300 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100"
+            className="rounded-lg border border-border bg-surface px-3 py-2 text-sm text-foreground transition hover:border-foreground md:hidden"
             aria-expanded={menuOpen}
             aria-label="Toggle navigation menu"
           >
-            <span className="text-base">{menuOpen ? "✕" : "☰"}</span>
+            <span className="text-base leading-none">{menuOpen ? "✕" : "☰"}</span>
           </button>
         </div>
 
         {menuOpen && (
-          <nav className="mt-4 flex flex-col gap-3 border-t border-gray-200 pt-4 md:hidden">
+          <nav className="mt-4 border-t border-border pt-4 md:hidden">
             <div className="flex flex-col gap-3">
               {navLinks.map((link) => {
                 const isActive = isActivePath(link.href);
@@ -89,7 +93,11 @@ export default function Navbar() {
                   <AppLink
                     key={link.href}
                     href={link.href}
-                    className={isActive ? "!text-black font-semibold" : ""}
+                    className={`relative inline-block w-fit pb-1 text-sm tracking-[0.02em] no-underline transition-colors after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-full after:bg-foreground after:transition-opacity after:duration-200 ${
+                      isActive
+                        ? "font-medium text-foreground after:opacity-100"
+                        : "text-muted after:opacity-0 hover:text-foreground hover:after:opacity-100"
+                    }`}
                     onClick={() => setMenuOpen(false)}
                   >
                     {link.label}
