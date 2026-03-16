@@ -1,13 +1,13 @@
-//import Link from "next/link";
 import Container from "./Container";
 import AppLink from "@/components/ui/AppLink"
 import Text from "@/components/ui/Text"
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 bg-white">
+    <footer className="border-t border-border bg-white">
       <Container>
-         <div className="flex items-center justify-between py-8">
+          <div className="flex flex-col gap-4 py-6
+           md:flex-row md:items-center md:justify-between">
 
           <Text variant="muted">
             © {new Date().getFullYear()} Penny Ahlstrom
@@ -15,7 +15,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-6">
             <AppLink
-              href="https://github.com/yourusername"
+              href="https://github.com/PennyAhlstrom"
               external
               variant="muted"
             >
@@ -23,7 +23,7 @@ export default function Footer() {
             </AppLink>
 
             <AppLink
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/PennyAhlstrom"
               external
               variant="muted"
             >
@@ -40,28 +40,3 @@ export default function Footer() {
     </footer>
   )
 }
-
-// import Link from "next/link";
-// import Container from "./Container";
-
-// export default function Footer() {
-//   return (
-//     <footer className="border-t border-gray-200 bg-white">
-//       <Container className="flex flex-col gap-4 py-6 text-sm text-gray-600 md:flex-row md:items-center md:justify-between">
-//         <p>© 2026 Penny Ahlstrom. All rights reserved.</p>
-
-//         <div className="flex items-center gap-4">
-//           <Link href="/projects" className="transition hover:text-black">
-//             Projects
-//           </Link>
-//           <Link href="/resume" className="transition hover:text-black">
-//             Resume
-//           </Link>
-//           <Link href="/contact" className="transition hover:text-black">
-//             Contact
-//           </Link>
-//         </div>
-//       </Container>
-//     </footer>
-//   );
-// }
