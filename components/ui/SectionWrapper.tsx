@@ -1,24 +1,27 @@
 type SectionProps = {
   children: React.ReactNode
   className?: string
-  variant?: "default" | "surface" | "dark";
+  variant?: "plain" | "light" | "dark";
 }
 
 export default function Section({ 
   children,
   className = "",
-  variant = "default", 
+  variant = "plain", // Appears directly on background unless something else is specified
 }: SectionProps) {
-
-  const variants = {
-    default: "bg-background text-foreground",
-    surface: "bg-surface text-foreground",
-    dark: "bg-foreground text-white",
+ const variants = {
+    plain: "",
+    light: "rounded-[2rem] border border-border bg-panel shadow-sm",
+    dark: "rounded-[2rem] border border-border bg-panel-dark shadow-sm",
   };
 
-  return (
-    <section className={`py-20 md:py-24 ${variants[variant]} ${className}`}>
-      {children}
+ return (
+    <section className={`px-4 py-8 md:px-6 md:py-10 ${className}`}>
+      <div className={variants[variant]}>
+        <div className="py-16 md:py-20">
+          {children}
+        </div>
+      </div>
     </section>
   );
 }
