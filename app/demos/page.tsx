@@ -5,7 +5,6 @@ export default function DemosPage() {
   return (
     <>
       <DemosIntro />
-      <DemoGrid />
     </>
   );
 }
