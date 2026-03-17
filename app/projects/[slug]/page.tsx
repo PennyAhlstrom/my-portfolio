@@ -88,7 +88,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           })}
         </div>
 
-        <div className="mt-6">
+        <div className="mt-6 flex justify-end">
           <AppLink href={project.githubUrl} external newTab arrow>
             View on GitHub
           </AppLink>
