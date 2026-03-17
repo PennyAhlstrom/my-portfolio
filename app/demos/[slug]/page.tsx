@@ -47,7 +47,7 @@ export default async function DemoPage({ params }: DemoPageProps) {
           ))}
         </div>
 
-        <div className="mt-8 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+        {/* <div className="mt-8 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
           <iframe
             src={demo.videoUrl}
             title={demo.title}
@@ -55,6 +55,19 @@ export default async function DemoPage({ params }: DemoPageProps) {
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
           />
+        </div> */}
+
+        <div className="mt-8 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+          <div className="aspect-video w-full">
+            <iframe
+              src={demo.videoUrl}
+              title={demo.title}
+              className="w-full h-full"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+            />
+          </div>
         </div>
 
         <Text className="mt-8 max-w-3xl">{demo.content}</Text>

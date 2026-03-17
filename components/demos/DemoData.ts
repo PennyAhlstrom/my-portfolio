@@ -7,7 +7,7 @@ export const demos = [
     tech: ["Java", "AI", "Demo"],
     content:
       "This demo walks through the gameplay, AI behavior, and overall structure of the Gomoku AI project.",
-    videoUrl: "https://player.vimeo.com/video/VIDEO_ID1",
+    videoUrl: "https://vento.so/view/57c32482-472b-49a9-b0fe-f68d8bcc521a/embed",
   },
   {
     title: "Portfolio Website Demo",
