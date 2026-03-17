@@ -1,12 +1,8 @@
-import Section from "@/components/ui/SectionWrapper";
-import Container from "@/components/layout/Container";
 import ReferenceCard from "@/components/references/ReferenceCard";
 
 export default function ReferenceGrid() {
   return (
-    <Section className="bg-gray-50">
-      <Container>
-        <div className="grid gap-8 md:grid-cols-2">
+    <div className="mt-10 grid gap-x-8 gap-y-10 md:grid-cols-2">
           <ReferenceCard
             title="Reference Letter"
             description="Recommendation from an instructor describing academic performance and technical strengths."
@@ -19,7 +15,5 @@ export default function ReferenceGrid() {
             href="/references/professional-reference.pdf"
           />
         </div>
-      </Container>
-    </Section>
   );
 }
