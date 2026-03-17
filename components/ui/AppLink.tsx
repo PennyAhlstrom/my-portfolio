@@ -8,6 +8,8 @@ type AppLinkProps = {
   direction?: "forward" | "back"
   external?: boolean
   newTab?: boolean
+  icon?: React.ReactNode
+  iconPosition?: "left" | "right"  
   className?: string
   onClick?: () => void
 }
@@ -20,6 +22,8 @@ export default function AppLink({
   direction = "forward",
   external = false,
   newTab = false,
+  icon,
+  iconPosition = "left",
   className = "",
   onClick,
 }: AppLinkProps) {
@@ -43,19 +47,30 @@ export default function AppLink({
 
   const content = (
     <>
+      {/* Back arrow */}
       {arrow && direction === "back" && (
-        <span aria-hidden="true" className={arrowClass}>
-          {arrowSymbol}
-        </span>
+        <span className={arrowClass}>{arrowSymbol}</span>
       )}
+
+      {/* Left icon */}
+      {icon && iconPosition === "left" && (
+        <span className="flex-shrink-0 opacity-80">{icon}</span>
+      )}
+
+      {/* Text */}
       <span>{children}</span>
+
+      {/* Right icon */}
+      {icon && iconPosition === "right" && (
+        <span className="flex-shrink-0 opacity-80">{icon}</span>
+      )}
+
+      {/* Forward arrow */}
       {arrow && direction === "forward" && (
-        <span aria-hidden="true" className={arrowClass}>
-          {arrowSymbol}
-        </span>
+        <span className={arrowClass}>{arrowSymbol}</span>
       )}
     </>
-  );
+  )
 
 
   if (external || newTab) {
