@@ -5,13 +5,15 @@ import Text from "@/components/ui/Text";
 
 export default function Credentials() {
   return (
-    <Section className="bg-gray-50">
+    <Section variant="light">
       <Container>
-        <SectionHeader>Credentials</SectionHeader>
+        <div className="max-w-3xl">
+          <SectionHeader>Credentials</SectionHeader>
 
-        <Text className="mt-4 max-w-3xl">
-          Credentials, certifications, and related information will go here.
-        </Text>
+          <Text className="mt-4 text-muted">
+            Credentials, certifications, and related information will go here.
+          </Text>
+        </div>
       </Container>
     </Section>
   );

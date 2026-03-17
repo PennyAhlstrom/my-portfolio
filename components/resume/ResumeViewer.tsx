@@ -6,18 +6,20 @@ import Button from "@/components/ui/Button";
 
 export default function ResumeViewer() {
   return (
-    <Section>
+    <Section variant="plain">
       <Container>
-        <SectionHeader>Resume</SectionHeader>
+        <div className="max-w-3xl">
+          <SectionHeader>Resume</SectionHeader>
 
-        <Text className="mt-4 max-w-3xl">
-          You can view or download my resume below.
-        </Text>
+          <Text className="mt-4 text-muted">
+            You can view or download my resume below.
+          </Text>
 
-        <div className="mt-6">
-          <Button href="/resume.pdf" theme="light">
-            View Resume
-          </Button>
+          <div className="mt-8">
+            <Button href="/resume.pdf" variant="primary" theme="light">
+              View Resume
+            </Button>
+          </div>
         </div>
       </Container>
     </Section>
