@@ -18,7 +18,13 @@ export default function ReferenceCard({
       <Text className="text-muted">{description}</Text>
 
       <div className="mt-6 flex justify-end">
-        <AppLink href={href} arrow variant="dark">
+        <AppLink
+          href={href}
+          external
+          newTab
+          arrow
+          variant="dark"
+        >
           View Reference
         </AppLink>
       </div>
