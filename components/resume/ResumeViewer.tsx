@@ -16,7 +16,13 @@ export default function ResumeViewer() {
           </Text>
 
           <div className="mt-8">
-            <Button href="/resume.pdf" variant="primary" theme="light">
+            <Button
+              href="/resume.pdf"
+              variant="primary"
+              theme="light"
+              external
+              newTab
+            >
               View Resume
             </Button>
           </div>
