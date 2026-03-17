@@ -49,7 +49,7 @@ export default function Navbar() {
               />
             </span>
 
-            <span>Penny Ahlstrom</span>
+            <span className="ml-4">Penny Ahlstrom</span>
           </AppLink>
 
           <nav className="hidden items-center gap-8 md:flex">
