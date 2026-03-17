@@ -1,6 +1,11 @@
 import Container from "./Container";
 import AppLink from "@/components/ui/AppLink"
 import Text from "@/components/ui/Text"
+import { actionIcons } from "@/components/icons/actionIcons";
+
+const GitHubIcon = actionIcons.github;
+const LinkedInIcon = actionIcons.linkedin;
+const EmailIcon = actionIcons.email;
 
 export default function Footer() {
   return (
@@ -13,10 +18,19 @@ export default function Footer() {
             © {new Date().getFullYear()} Penny Ahlstrom
           </Text>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
+            <AppLink
+              href="mailto:your.email@example.com"
+              icon={<EmailIcon size={14} />}
+              variant="muted"
+            >
+              Email
+            </AppLink>
+
             <AppLink
               href="https://github.com/PennyAhlstrom"
               external
+              icon={<GitHubIcon size={14} />}
               variant="muted"
             >
               GitHub
@@ -25,18 +39,15 @@ export default function Footer() {
             <AppLink
               href="https://linkedin.com/in/PennyAhlstrom"
               external
+              icon={<LinkedInIcon size={14} />}
               variant="muted"
             >
               LinkedIn
-            </AppLink>
-
-            <AppLink href="/contact" variant="muted">
-              Contact
             </AppLink>
           </div>
 
         </div>
       </Container>
     </footer>
-  )
+  );
 }
