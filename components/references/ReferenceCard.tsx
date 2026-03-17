@@ -15,10 +15,10 @@ export default function ReferenceCard({
 }: ReferenceCardProps) {
   return (
     <Card title={title} variant="light">
-      <Text>{description}</Text>
+      <Text className="text-muted">{description}</Text>
 
-      <div className="mt-4">
-        <AppLink href={href} arrow>
+      <div className="mt-6 flex justify-end">
+        <AppLink href={href} arrow variant="dark">
           View Reference
         </AppLink>
       </div>
