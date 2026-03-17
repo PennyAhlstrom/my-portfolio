@@ -7,9 +7,9 @@ import Awards from "@/components/about/Awards";
 export default function AboutPage() {
   return (
     <>
-      <Biography />
       <Philosophy />
       <Skills />
+      <Biography />
       <Accomplishments />
       <Awards />
     </>

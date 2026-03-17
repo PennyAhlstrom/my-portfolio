@@ -5,12 +5,15 @@ import Text from "@/components/ui/Text";
 
 export default function Awards() {
   return (
-    <Section>
+    <Section variant="light">
       <Container>
-        <SectionHeader variant="light">Awards</SectionHeader>
-        <Text variant="light" className="mt-4 max-w-3xl">
-          Awards content goes here.
-        </Text>
+        <div className="max-w-3xl">
+          <SectionHeader>Awards</SectionHeader>
+
+          <Text className="mt-4 text-muted">
+            Awards content goes here.
+          </Text>
+        </div>
       </Container>
     </Section>
   );

@@ -5,12 +5,15 @@ import Text from "@/components/ui/Text";
 
 export default function Philosophy() {
   return (
-    <Section className="bg-gray-50">
+    <Section variant="plain">
       <Container>
-        <SectionHeader>Philosophy</SectionHeader>
-        <Text className="mt-4 max-w-3xl">
-          Philosophy content goes here.
-        </Text>
+        <div className="max-w-3xl">
+          <SectionHeader>Philosophy</SectionHeader>
+
+          <Text className="mt-4 text-muted">
+            Philosophy content goes here.
+          </Text>
+        </div>
       </Container>
     </Section>
   );

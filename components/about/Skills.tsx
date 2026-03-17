@@ -5,12 +5,15 @@ import Text from "@/components/ui/Text";
 
 export default function Skills() {
   return (
-    <Section>
+   <Section variant="light">
       <Container>
-        <SectionHeader variant="light">Skills</SectionHeader>
-        <Text variant="light" className="mt-4 max-w-3xl">
-          Skills content goes here.
-        </Text>
+        <div className="max-w-3xl">
+          <SectionHeader>Skills</SectionHeader>
+
+          <Text className="mt-4 text-muted">
+            Skills content goes here.
+          </Text>
+        </div>
       </Container>
     </Section>
   );

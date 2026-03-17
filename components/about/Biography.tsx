@@ -5,12 +5,15 @@ import Text from "@/components/ui/Text";
 
 export default function Biography() {
   return (
-    <Section>
+    <Section variant="light">
       <Container>
-        <SectionHeader variant="light">Biography</SectionHeader>
-        <Text variant="light" className="mt-4 max-w-3xl">
-          Biography content goes here.
-        </Text>
+        <div className="max-w-3xl">
+          <SectionHeader>Biography</SectionHeader>
+
+          <Text className="mt-4 text-muted">
+            Biography content goes here.
+          </Text>
+        </div>
       </Container>
     </Section>
   );
