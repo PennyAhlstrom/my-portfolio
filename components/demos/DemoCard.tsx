@@ -1,7 +1,7 @@
 import Card from "@/components/ui/Card";
 import Text from "@/components/ui/Text";
 import TechBadge from "@/components/tech/TechBadge";
-import { techIcons } from "@/components/tech/techIcons";
+import { techIcons } from "@/components/icons/techIcons";
 
 type DemoCardProps = {
   title: string;
