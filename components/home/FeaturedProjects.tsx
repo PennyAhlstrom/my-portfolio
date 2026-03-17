@@ -7,42 +7,38 @@ import AppLink from "@/components/ui/AppLink"
 
 export default function FeaturedProjects() {
   return (
-    <Section>
+    <Section variant="light">
       <Container>
-        <div className="flex items-center justify-between">
-          {/* <h2 className="text-2xl font-semibold">Featured Projects</h2> */}
-        <SectionHeader variant="light">Featured Projects</SectionHeader> 
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <SectionHeader>Featured Projects</SectionHeader>
 
-          <AppLink
-            href="/projects"
-            arrow
-          >
+          <AppLink href="/projects" arrow variant="dark">
             View all projects
           </AppLink>
         </div>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-2">
-           <Card
-              title="Gomoku AI"
-              variant="light"
-              href="/projects/gomoku-ai"
-              image="/images/gomoku-ai.jpg"
-              imageAlt="Screenshot of Gomoku AI project"
-           >
-            <Text className="mt-3">
+        <div className="mt-12 grid gap-x-8 gap-y-10 md:grid-cols-2">
+          <Card
+            title="Gomoku AI"
+            variant="light"
+            href="/projects/gomoku-ai"
+            image="/images/gomoku-ai.jpg"
+            imageAlt="Screenshot of Gomoku AI project"
+          >
+            <Text className="text-muted">
               Java implementation of the Gomoku board game with an AI opponent
               using search algorithms and heuristic evaluation.
             </Text>
           </Card>
 
-            <Card
-              title="Portfolio Website"
-              variant="light"
-              href="/projects/portfolio-website"
-              image="/images/portfolio-website.jpg"
-              imageAlt="Screenshot of portfolio website"
-            >
-            <Text className="mt-3">
+          <Card
+            title="Portfolio Website"
+            variant="light"
+            href="/projects/portfolio-website"
+            image="/images/portfolio-website.jpg"
+            imageAlt="Screenshot of portfolio website"
+          >
+            <Text className="text-muted">
               Professional portfolio built with Next.js and Tailwind to showcase
               projects, research, and technical experience.
             </Text>

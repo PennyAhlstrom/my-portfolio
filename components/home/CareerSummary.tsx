@@ -5,33 +5,32 @@ import Text from "@/components/ui/Text";
 
 export default function CareerSummary() {
   return (
-    <Section className="bg-gray-50">
+    <Section variant="light">
       <Container>
-        <SectionHeader variant="dark">Career Summary</SectionHeader>
-        {/* <h2 className="text-2xl font-semibold">Career Summary</h2> */}
+        <SectionHeader>Career Summary</SectionHeader>
 
-         <ul className="mt-6 space-y-3 list-disc pl-6">
-          <Text as="li" variant="dark">
+        <ul className="mt-8 space-y-4 pl-5 marker:text-muted">
+          <Text as="li" className="text-muted">
             Reduced projected API costs by 82% by replacing paid services with
             open-source alternatives.
           </Text>
 
-          <Text as="li" variant="dark">
+          <Text as="li" className="text-muted">
             Built machine learning models achieving over 90% test accuracy on
             classification tasks.
           </Text>
 
-          <Text as="li" variant="dark">
+          <Text as="li" className="text-muted">
             Developed full-stack applications using the MERN stack supporting
             CRUD operations and authentication.
           </Text>
 
-          <Text as="li" variant="dark">
+          <Text as="li" className="text-muted">
             Designed user-friendly interfaces that improved workflow efficiency
             for project users.
           </Text>
 
-          <Text as="li" variant="dark">
+          <Text as="li" className="text-muted">
             Created AI-driven projects integrating Python, TensorFlow, and data
             analysis tools.
           </Text>
