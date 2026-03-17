@@ -5,7 +5,6 @@ export default function ReferencesPage() {
   return (
     <>
       <ReferencesIntro />
-      <ReferenceGrid />
     </>
   );
 }
