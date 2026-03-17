@@ -5,18 +5,31 @@ import AppLink from "@/components/ui/AppLink";
 type ReferenceCardProps = {
   title: string;
   description: string;
+  author?: string;
   href: string;
 };
 
 export default function ReferenceCard({
   title,
   description,
+  author,
   href,
 }: ReferenceCardProps) {
   return (
     <Card title={title} variant="light">
-      <Text className="text-muted">{description}</Text>
+  {/* Author */}
+   {author && (
+    <div className="mt-2 pb-3 border-b border-border">
+      <Text size="sm" className="mt-1 text-muted">
+        {author}
+      </Text>
+    </div>
+  )}
 
+  {/* Description */}
+  <Text className="mt-4 text-muted">
+    {description}
+  </Text>
       <div className="mt-6 flex justify-end">
         <AppLink
           href={href}
