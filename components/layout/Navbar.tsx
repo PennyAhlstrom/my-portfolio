@@ -30,10 +30,11 @@ export default function Navbar() {
     // <header className="border-b border-gray-200 bg-white"> // OG
     //  <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur"> // without shadow
     // <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 shadow-sm backdrop-blur"> // without shadow
-      <header className="sticky top-0 z-50 border-b border-border bg-white">
+      <header className="sticky top-0 z-50 border-b border-border bg-panel-dark">
       <Container className="min-h-16 py-6">
-        <div className="flex items-center justify-between">
-          <AppLink
+        {/* <div className="flex items-center justify-between"> // left-justified navbar items */}
+        <div className="flex items-center justify-end md:justify-center">
+          {/* <AppLink
             href="/"
             // className="font-serif text-xl font-semibold tracking-[-0.02em] text-foreground no-underline hover:text-accent"
             className="flex items-center gap-3 font-serif text-xl font-semibold tracking-[-0.02em] text-foreground no-underline hover:text-accent"
@@ -50,7 +51,7 @@ export default function Navbar() {
             </span>
 
             <span className="ml-4">Penny Ahlstrom</span>
-          </AppLink>
+          </AppLink> */}
 
           <nav className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => {
