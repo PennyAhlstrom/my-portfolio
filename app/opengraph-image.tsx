@@ -23,6 +23,13 @@ export default function Image() {
           fontFamily: "sans-serif",
         }}
       >
+        <img
+          src="https://penny-ahlstrom-portfolio.vercel.app/icons/favicon.png"
+          width={140}
+          height={140}
+          style={{ marginBottom: 32 }}
+        />
+
         <div style={{ fontSize: 64, fontWeight: 600 }}>
           Penny Ahlstrom
         </div>
