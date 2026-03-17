@@ -1,59 +1,56 @@
+"use client";
+
+import { useState } from "react";
 import Section from "@/components/ui/SectionWrapper";
 import Container from "@/components/layout/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Text from "@/components/ui/Text";
 import AppLink from "@/components/ui/AppLink";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { actionIcons } from "@/components/icons/actionIcons"
 
-const sectionVariant = "light"  // I'm doing this to easily change the styling for the entire page
-                                //  instead of useContext since there is just one level of props
-                                //  so prop drilling is not really a concern
+const GitHubIcon = actionIcons.github
+const LinkedInIcon = actionIcons.linkedin
+const EmailIcon = actionIcons.email
 
 export default function ContactDetails() {
+  const [showEmail, setShowEmail] = useState(false);
   return (
-    <Section>
+    <Section variant="plain">
       <Container>
-        <SectionHeader variant={sectionVariant}>Contact</SectionHeader>
+        <SectionHeader>Contact</SectionHeader>
 
-        <Text variant={sectionVariant} className="mt-4 max-w-xl">
+        <Text className="mt-4 max-w-xl text-muted">
           If you'd like to collaborate, discuss a project, or learn more about my
           work, feel free to reach out.
         </Text>
 
-        <div className="mt-8 space-y-4">
-
+      <div className="mt-10 flex flex-wrap items-center gap-x-10 gap-y-4">
           <AppLink
-            href="mailto:your.email@example.com"
-            external
-            className="flex items-center gap-3"
+            href="mailto:penny.ahlstrom@georgebrown.ca"
+            icon={<EmailIcon size={14} />}
             variant="muted"
           >
-            <MdEmail className="text-lg" />
-            your.email@example.com
+            Email
           </AppLink>
 
           <AppLink
             href="https://github.com/yourusername"
             external
-            className="flex items-center gap-3"
+            icon={<GitHubIcon size={14} />}
             variant="muted"
           >
-            <FaGithub className="text-lg" />
             GitHub
           </AppLink>
 
           <AppLink
             href="https://linkedin.com/in/yourusername"
             external
-            className="flex items-center gap-3"
+            icon={<LinkedInIcon size={14} />}
             variant="muted"
           >
-            <FaLinkedin className="text-lg" />
             LinkedIn
           </AppLink>
-
         </div>
       </Container>
     </Section>
