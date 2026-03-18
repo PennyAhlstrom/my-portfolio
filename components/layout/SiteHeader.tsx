@@ -10,14 +10,14 @@ export default function SiteHeader() {
 
           <div className="flex items-center gap-3">
 
-            {/* Profile image (rounded square) */}
+            {/* Profile image (rounded square) - made this logo for now - keep it this way? */}
             <AppLink
               href="/"
               className="relative h-7 w-7 overflow-hidden rounded-md border border-border bg-surface"
             >
               <Image
-                src="/profile.jpg"
-                alt="Penny Ahlstrom"
+                src="/icons/favicon.png"
+                alt="Penny Ahlstrom Logo"
                 fill
                 className="object-cover"
                 sizes="40px"
