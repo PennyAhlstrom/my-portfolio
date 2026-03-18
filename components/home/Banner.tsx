@@ -34,6 +34,14 @@ export default function Banner() {
             <Text className="mt-6 max-w-2xl text-muted">
               Software developer focused on building practical solutions that improve
               workflows, solve real problems, and make technology easier to use.
+              I have a strong foundation in machine learning, data analysis, 
+              and full-stack development, and I am experienced building data-driven applications, 
+              including machine learning models in Python and full-stack systems using modern web technologies.
+              <br></br>
+              My background in biostatistics and biological research allows me to approach problems analytically, 
+              while my programming experience enables me to translate complex ideas into practical solutions. 
+              I am particularly interested in applying machine learning and data-driven approaches 
+              to real-world problems.
             </Text>
           </div>
 
