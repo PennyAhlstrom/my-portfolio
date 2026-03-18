@@ -39,7 +39,7 @@ export default function SiteHeader() {
             </div>
             <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 px-4">
                 <p className="whitespace-nowrap font-serif text-sm italic text-muted">
-                    “Thoughtful systems, clear design, and work that serves people well.”
+                    “Thoughtful systems, clear design, practical solutions that help people.”
                 </p>
             </div>
 
