@@ -37,7 +37,7 @@ export default function Banner() {
               I have a strong foundation in machine learning, data analysis, 
               and full-stack development, and I am experienced building data-driven applications, 
               including machine learning models in Python and full-stack systems using modern web technologies.
-              <br></br>
+              <br />
               My background in biostatistics and biological research allows me to approach problems analytically, 
               while my programming experience enables me to translate complex ideas into practical solutions. 
               I am particularly interested in applying machine learning and data-driven approaches 
