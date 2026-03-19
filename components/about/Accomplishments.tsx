@@ -8,10 +8,12 @@ export default function Accomplishments() {
         <Section variant="light">
       <Container>
         <div className="max-w-3xl">
-          <SectionHeader>Accomplishments</SectionHeader>
+          <SectionHeader>Accomplishments & Awards</SectionHeader>
 
           <Text className="mt-4 text-muted">
-            Accomplishments content goes here.
+            Dean’s Honour List — Achieved for five consecutive terms at George Brown Polytechnic
+            <br />
+            Thesis Prize Nomination — Recognized for graduate research at York University
           </Text>
         </div>
       </Container>
