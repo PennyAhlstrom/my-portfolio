@@ -9,14 +9,25 @@ export default function Degrees() {
       <Container>
         <div className="max-w-3xl">
           <SectionHeader>Degrees & Diplomas</SectionHeader>
-          <SectionHeader as="h3" size="small">Advanced Diploma — Computer Programming and Analysis</SectionHeader>
-          <Text className="mt-4 text-muted">
-            George Brown Polytechnic, Toronto | 2023 – Present
-          </Text>
-          <SectionHeader as="h3" size="small">Master of Science — Cell Biology</SectionHeader>
-          <Text className="mt-4 text-muted">
-            York University, Toronto | 2012 – 2015
-          </Text>
+          
+          {/* GBC */}
+          <div className="mt-8">
+            <SectionHeader as="h3" size="small">Advanced Diploma — Computer Programming and Analysis</SectionHeader>
+            <Text className="mt-1 text-muted">
+              George Brown Polytechnic, Toronto | 2023 – Present
+            </Text>
+          </div>
+
+          {/* Divider Line */}
+          <div className="my-8 border-t border-border" />
+          
+          {/* YU */}
+          <div className="mt-8">
+            <SectionHeader as="h3" size="small">Master of Science — Cell Biology</SectionHeader>
+            <Text className="mt-1 text-muted">
+              York University, Toronto | 2012 – 2015
+            </Text>
+          </div>
         </div>
       </Container>
     </Section>
