@@ -1,6 +1,9 @@
 import Card from "@/components/ui/Card";
 import Text from "@/components/ui/Text";
 import AppLink from "@/components/ui/AppLink";
+import { actionIcons } from "@/components/icons/actionIcons";
+
+const OpenIcon = actionIcons.view;
 
 type ReferenceCardProps = {
   title: string;
@@ -38,6 +41,7 @@ export default function ReferenceCard({
           arrow
           variant="dark"
         >
+           <OpenIcon className="inline-block text-base" />
           View Reference
         </AppLink>
       </div>
