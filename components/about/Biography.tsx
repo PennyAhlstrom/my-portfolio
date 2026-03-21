@@ -5,7 +5,7 @@ import Text from "@/components/ui/Text";
 
 export default function Biography() {
   return (
-    <Section variant="light">
+    <Section variant="plain">
       <Container>
         <div className="max-w-3xl">
           <SectionHeader>Biography</SectionHeader>
