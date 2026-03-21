@@ -11,20 +11,24 @@ export default function Skills() {
           <div className="max-w-3xl">
             <SectionHeader as="h3" size="small">Technical Abilities</SectionHeader>
             <Text className="mt-4 text-muted">
-              <strong>Languages:</strong> Python, JavaScript, TypeScript, Java, C#, PHP, SQL, Swift
+              <strong>Languages:</strong> <br />Python, JavaScript, TypeScript, Java, C#, PHP, SQL, Swift
               <br />
-              <strong>Frontend Development:</strong> React, Angular, responsive UI design, component-based architecture
+              <strong>Frontend Development:</strong> <br />React, Angular, responsive UI design, component-based architecture
               <br />
-              <strong>Backend Development:</strong> Node.js, Express, Spring Boot, RESTful API design, authentication and middleware
+              <strong>Backend Development:</strong> <br />Node.js, Express, Spring Boot, RESTful API design, authentication and middleware
               <br />
-              <strong>Databases:</strong> MongoDB, Postgres, relational database design, data modeling and structured data management
+              <strong>Databases:</strong> <br />MongoDB, Postgres, relational database design, data modeling and structured data management
               <br />
-              <strong>Machine Learning & Data:</strong> scikit-learn, TensorFlow/Keras, pandas, NumPy, Matplotlib, data preprocessing and model evaluation
+              <strong>Machine Learning & Data:</strong> <br />scikit-learn, TensorFlow/Keras, pandas, NumPy, Matplotlib, data preprocessing and model evaluation
               <br />
-              <strong>Tools & Technologies:</strong> Git, Docker, Postman, TestContainers
+              <strong>Tools & Technologies:</strong> <br />Git, Docker, Postman, TestContainers
               <br />
             </Text>
           </div>
+          
+           {/* Divider Line */}
+          <div className="my-8 border-t border-border" />
+          
           <div className="max-w-3xl">
             <SectionHeader as="h3" size="small">Applied Skills & Professional Strengths</SectionHeader>
             <Text className="mt-4 text-muted">
