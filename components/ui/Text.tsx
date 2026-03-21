@@ -23,7 +23,7 @@ export default function Text({
   const Component = as;
 
  return (
-    <Component className={`text-base leading-8 ${color} ${className}`}>
+    <Component className={`text-base leading-6 ${color} ${className}`}>
       {children}
     </Component>
   );
