@@ -2,10 +2,11 @@ import Section from "@/components/ui/SectionWrapper";
 import Container from "@/components/layout/Container";
 import Text from "@/components/ui/Text";
 import Image from "next/image";
+import Button from "@/components/ui/Button";
 
 export default function Banner() {
   return (
-   <Section variant="plain" className="pt-24 pb-16 md:pt-28 md:pb-20">
+   <Section variant="light" className="pt-24 pb-16 md:pt-28 md:pb-20">
       <Container>
         <div className="flex flex-col md:flex-row md:items-start md:gap-12">
           
@@ -42,7 +43,14 @@ export default function Banner() {
               while my programming experience enables me to translate complex ideas into practical solutions. 
               I am particularly interested in applying machine learning and data-driven approaches 
               to real-world problems.
+              <br />
+              Browse through my portfolio to learn more about me and to see examples of my work or watch the video of me taking you through the site.
             </Text>
+            <div className="mt-8">
+              <Button href="/demos/developer-portfolio-website" variant="secondary" theme="light">
+                Watch Video
+              </Button>
+            </div>
           </div>
 
         </div>
