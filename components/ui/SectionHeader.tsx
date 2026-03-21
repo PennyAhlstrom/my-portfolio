@@ -24,8 +24,8 @@ export default function SectionHeading({
   // Size variants for different headings
   const sizes = {
     section: "text-3xl md:text-4xl font-semibold mb-6",
-    sub: "text-2xl md:text-3xl font-semibold mb-4",
-    small: "text-xl md:text-2xl font-medium mb-3",
+    sub: "text-2xl md:text-3xl font-semibold leading-tight",
+    small: "text-xl md:text-2xl font-medium leading-snug",
   };
 
   const color = variants[variant];
