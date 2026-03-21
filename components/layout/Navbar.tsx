@@ -10,9 +10,9 @@ import AppLink from "@/components/ui/AppLink";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/resume", label: "Resume" },
   { href: "/projects", label: "Projects" },
   { href: "/demos", label: "Demos" },
+  { href: "/documents", label: "Documents" },
   { href: "/references", label: "References" },
   { href: "/contact", label: "Contact" },
 ];
