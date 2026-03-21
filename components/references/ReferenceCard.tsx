@@ -23,7 +23,7 @@ export default function ReferenceCard({
   {/* Author */}
    {author && (
     <div className="mt-2 pb-3 border-b border-border">
-      <Text size="sm" className="mt-1 text-muted">
+      <Text className="mt-1 text-muted">
         {author}
       </Text>
     </div>
