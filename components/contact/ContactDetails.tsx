@@ -35,7 +35,7 @@ export default function ContactDetails() {
           </AppLink>
 
           <AppLink
-            href="https://github.com/yourusername"
+            href="https://github.com/PennyAhlstrom"
             external
             icon={<GitHubIcon size={14} />}
             variant="muted"
@@ -44,7 +44,7 @@ export default function ContactDetails() {
           </AppLink>
 
           <AppLink
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/PennyAhlstrom"
             external
             icon={<LinkedInIcon size={14} />}
             variant="muted"
