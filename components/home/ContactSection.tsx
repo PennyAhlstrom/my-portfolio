@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 
 export default function ContactSection() {
   return (
-    <Section variant="light">
+    <Section variant="plain">
       <Container>
         <div className="max-w-2xl">
           <SectionHeader>Get in Touch</SectionHeader>

@@ -5,7 +5,7 @@ import Text from "@/components/ui/Text";
 
 export default function CareerSummary() {
   return (
-    <Section variant="light">
+    <Section variant="plain">
       <Container>
         <SectionHeader>Career Summary</SectionHeader>
 
