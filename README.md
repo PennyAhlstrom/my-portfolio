@@ -43,10 +43,10 @@ https://penny-ahlstrom-portfolio.vercel.app/
 
 ## Overview
 
-* Multi-page layout (Home, About, Resume, Projects, Demos, References, Contact)
-* Resume viewer for PDF
+* Multi-page layout (Home, About, Projects, Demos, Documents, References, Contact)
+* Document viewer for PDF
 * Project pages with technologies and detailed descriptions
-* Demo section with embedded content (Vimeo)
+* Demo section with embedded content (Vento)
 * Consistent, reusable component-based design system
 
 ---
