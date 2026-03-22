@@ -78,10 +78,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             const Icon = techIcons[item];
 
             return (
-              <TechBadge
-                key={item}
-                icon={Icon ? <Icon size={12} /> : undefined}
-              >
+              <TechBadge key={item}>
                 {item}
               </TechBadge>
             );
