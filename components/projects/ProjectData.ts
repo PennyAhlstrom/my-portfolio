@@ -103,10 +103,10 @@ export const projects = [
     "ASP.NET Core",
     "Entity Framework",
     "Bootstrap",
-    "AJAX",
+    // "AJAX",
     "PostgreSQL",
     "Azure",
-    "Serilog",
+    // "Serilog",
     ],
       content:
       `This project is a database-driven web application designed to help small businesses manage inventory, track products, and process orders. The system supports full CRUD operations, category management, and low-stock monitoring.
