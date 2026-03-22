@@ -8,10 +8,10 @@ export default function AboutPage() {
   return (
     <>
       <Philosophy />
-      <Skills />
       <Biography />
-      <Degrees />
+      <Skills />
       <Accomplishments />
+      <Degrees />
     </>
   );
 }
