@@ -21,12 +21,24 @@ export const projects = [
     githubUrl: "https://github.com/ClassMate3000",
     images: [
       {
-        src: "/projects/classmate-login-1.png",
+        src: "/images/projects/classmate-login-1.png",
         alt: "ClassMate Login Screen",
       },
       {
-        src: "/projects/classmate-courses-2.png",
-        alt: "ClassMate Home Screen",
+        src: "/images/projects/classmate-courses-2.png",
+        alt: "ClassMate Home Screen - Courses",
+      },
+      {
+        src: "/images/projects/classmate-tasks-3.png",
+        alt: "ClassMate Home Screen - Tasks",
+      },
+      {
+        src: "/images/projects/classmate-reminders-4.png",
+        alt: "ClassMate Home Screen - Reminders",
+      },
+      {
+        src: "/images/projects/classmate-grades-5.png",
+        alt: "ClassMate Home Screen - Grades",
       },
     ],
     featured: true,
@@ -49,8 +61,32 @@ export const projects = [
     githubUrl: "https://github.com/PennyAhlstrom/my-portfolio",
     images: [
       {
-        src: "/projects/portfolio-website-1.jpg",
-        alt: "Homepage of the portfolio website",
+        src: "/images/projects/portfolio-home-1.png",
+        alt: "Homepage of the Portfolio Website",
+      },
+      {
+        src: "/images/projects/portfolio-about-2.png",
+        alt: "About page of the Portfolio Website",
+      },
+      {
+        src: "/images/projects/portfolio-projects-3.png",
+        alt: "Projects page of the Portfolio Website",
+      },
+      {
+        src: "/images/projects/portfolio-demos-4.png",
+        alt: "Demos page of the Portfolio Website",
+      },
+      {
+        src: "/images/projects/portfolio-documents-5.png",
+        alt: "Documents page of the Portfolio Website",
+      },
+      {
+        src: "/images/projects/portfolio-references-6.png",
+        alt: "References page of the Portfolio Website",
+      },
+      {
+        src: "/images/projects/portfolio-contact-7.png",
+        alt: "Contact page of the Portfolio Website",
       },
     ],
     featured: true,
