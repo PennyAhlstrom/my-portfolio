@@ -11,7 +11,7 @@ export default function ReferenceGrid() {
           />
 
           <ReferenceCard
-            title="Academic Reference – Full-Stack & DevOps"
+            title="Academic Reference – Full-Stack Development & DevOps"
             description="Full-stack development (MERN/MEAN), DevOps practices, and team leadership. A+ academic performance, Git-based collaboration, and the ability to build scalable, well-structured applications."
             author="Professor – Full-Stack & DevOps"
             href="/docs/references/reference-letter-2.pdf"
