@@ -5,7 +5,7 @@ import Text from "@/components/ui/Text";
 
 export default function Philosophy() {
   return (
-    <Section variant="plain">
+    <Section variant="light">
       <Container>
         <div className="max-w-3xl">
           <SectionHeader>Philosophy</SectionHeader>
