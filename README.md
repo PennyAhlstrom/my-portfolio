@@ -11,25 +11,33 @@ https://penny-ahlstrom-portfolio.vercel.app/
 
 ## Screenshots
 
-### Home Page
+### Home
+![Home](./public/images/projects/portfolio-home-1.png)  
+*Structured landing page with clear navigation and a focused layout, designed to guide users quickly to key sections of the portfolio.*
 
-![Home Page](./public/screenshots/home.png)
-*Clean landing page with clear navigation and a structured layout, designed to introduce key sections of the portfolio at a glance.*
+### About
+![About](./public/images/projects/portfolio-about-2.png)  
+*Professional overview highlighting background, skills, and approach, with a balance of technical detail and personal context.*
 
-### Resume Page
+### Projects
+![Projects](./public/images/projects/portfolio-projects-3.png)  
+*Organized project showcase with clear presentation of technologies and direct access to detailed project pages.*
 
-![Resume Page](./public/screenshots/resume.png)
-*Integrated resume viewer with quick access to view resume PDF, providing a seamless experience for recruiters.*
+### Demos
+![Demos](./public/images/projects/portfolio-demos-4.png)  
+*Interactive demonstrations and embedded content showcasing practical implementations and real-world functionality.*
 
-### Projects Page
+### Documents
+![Documents](./public/images/projects/portfolio-documents-5.png)  
+*Centralized document viewer providing easy access to resume, coverletter and unofficial transcript.*
 
-![Projects Page](./public/screenshots/projects.png)
-*Organized project showcase highlighting technologies used and providing easy access to detailed project pages.*
+### References
+![References](./public/images/projects/portfolio-references-6.png)  
+*Academic references presented in a clean, accessible format.*
 
-### Demos Page
-
-![Demos Page](./public/screenshots/demos.png)
-*Interactive demos and embedded content demonstrating practical implementations and real-world functionality.*
+### Contact
+![Contact](./public/images/projects/portfolio-contact-7.png)  
+*Contact interface with email button as well as links to GitHub and LinkedIn.*
 
 ---
 
