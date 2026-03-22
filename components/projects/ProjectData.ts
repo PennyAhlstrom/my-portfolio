@@ -6,10 +6,10 @@ export const projects = [
       `Developed a full-stack application with a React frontend and Java Spring Boot microservices backend, implementing API gateway routing and distributed system architecture.`,
     tech: [
       "Java",
-      "TypeScript",
+      "JavaScript",
       "React",
       "Spring Boot",
-      "REST APIs",
+      "RESTful APIs",
       "API Gateway",
       "Docker",
     ],
@@ -21,11 +21,11 @@ export const projects = [
     githubUrl: "https://github.com/ClassMate3000",
     images: [
       {
-        src: "/projects/classmate-1.jpg",
+        src: "/projects/classmate-login-1.png",
         alt: "ClassMate Login Screen",
       },
       {
-        src: "/projects/classmate-2.jpg",
+        src: "/projects/classmate-courses-2.png",
         alt: "ClassMate Home Screen",
       },
     ],
@@ -86,32 +86,7 @@ export const projects = [
     ],
     featured: false,
   },
-  {
-    title: "Python Game Feature Development",
-    slug: "python-game-feature-development",
-    description:
-      `Developed a feature for a command-line game using object-oriented programming, inheritance, and file handling to create a reusable and extensible system.`,
-    tech: [
-      "Python",
-      "OOP",
-      "File I/O",
-      "Exception Handling",
-    ],
-    content:
-      `This project involved adding a unique featuire to a structured game system in Python, focusing on object-oriented programming principles such as inheritance, encapsulation, and code reuse.
-      Separate classes were created for core entities, with a shared parent class to manage common attributes. Property decorators were used to control access to private data, and exception handling was implemented to validate user input and prevent runtime errors.
-      The system also includes file-based persistence to store and load game progress, demonstrating the ability to manage state across sessions.
-      This project highlights strong foundational programming skills and the ability to structure maintainable and extensible code.`,
-    githubUrl: "https://github.com/PennyAhlstrom/comp2152_labs/tree/main/assignment2",
-    images: [
-      {
-        src: "/projects/python-game-feature-1.jpg",
-        alt: "Python Game - Crazy Scientist Feature",
-      },
-    ],
-    featured: false,
-  },
-  {
+    {
     title: "Swift iOS UI Development",
     slug: "swift-ios-ui-development",
     description:
@@ -152,6 +127,31 @@ export const projects = [
       {
         src: "/projects/android-classmate-ui-1.jpg",
         alt: "Homepage of Android ClassMate app",
+      },
+    ],
+    featured: false,
+  },
+  {
+    title: "Python Game Feature Development",
+    slug: "python-game-feature-development",
+    description:
+      `Developed a feature for a command-line game using object-oriented programming, inheritance, and file handling to create a reusable and extensible system.`,
+    tech: [
+      "Python",
+      "OOP",
+      "File I/O",
+      "Exception Handling",
+    ],
+    content:
+      `This project involved adding a unique featuire to a structured game system in Python, focusing on object-oriented programming principles such as inheritance, encapsulation, and code reuse.
+      Separate classes were created for core entities, with a shared parent class to manage common attributes. Property decorators were used to control access to private data, and exception handling was implemented to validate user input and prevent runtime errors.
+      The system also includes file-based persistence to store and load game progress, demonstrating the ability to manage state across sessions.
+      This project highlights strong foundational programming skills and the ability to structure maintainable and extensible code.`,
+    githubUrl: "https://github.com/PennyAhlstrom/comp2152_labs/tree/main/assignment2",
+    images: [
+      {
+        src: "/projects/python-game-feature-1.jpg",
+        alt: "Python Game - Crazy Scientist Feature",
       },
     ],
     featured: false,

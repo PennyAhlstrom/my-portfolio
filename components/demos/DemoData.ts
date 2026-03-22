@@ -16,21 +16,6 @@ export const demos = [
     videoUrl: "https://vento.so/view/f6382ca7-5dae-4997-9bca-73eb847122ef/embed",
   },
   {
-    title: "Developer Portfolio Website",
-    slug: "developer-portfolio-website",
-    description:
-      `Designed and developed a personal portfolio website to showcase projects, skills, and experience, with a focus on clean design, responsiveness, and reusable components.`,
-    tech: [
-      "TypeScript", 
-      "React", 
-      "Next.js", 
-      "Tailwind",
-    ],
-    content:
-      `This project is a custom-built portfolio website designed to present my work, skills, and experience in a clear and structured way. The focus was on creating a clean, modern interface while maintaining flexibility through reusable components. I implemented a component-based architecture using React and TypeScript, allowing for consistent styling and scalable design. The site includes multiple sections such as projects, demos, and resume content, all organized for easy navigation. Special attention was given to layout, typography, and responsiveness to ensure the site remains intuitive and visually consistent across devices. This project reflects my approach to building user-focused interfaces that balance design and functionality.`,
-    videoUrl: "https://vento.so/view/need-to-add-video-link-once-i-record-it/embed",
-  },
-  {
     title: "Regression Modeling and Prediction",
     slug: "regression-modeling-and-prediction",
     description:
@@ -104,6 +89,21 @@ export const demos = [
       into a more complete, secure, and scalable system aligned with modern web development practices.`,
     videoUrl: "https://vento.so/view/d61d9cdc-70ed-4376-bc72-68ee1bf461b8/embed",
   },
+   {
+    title: "Developer Portfolio Website",
+    slug: "developer-portfolio-website",
+    description:
+      `Designed and developed a personal portfolio website to showcase projects, skills, and experience, with a focus on clean design, responsiveness, and reusable components.`,
+    tech: [
+      "TypeScript", 
+      "React", 
+      "Next.js", 
+      "Tailwind",
+    ],
+    content:
+      `This project is a custom-built portfolio website designed to present my work, skills, and experience in a clear and structured way. The focus was on creating a clean, modern interface while maintaining flexibility through reusable components. I implemented a component-based architecture using React and TypeScript, allowing for consistent styling and scalable design. The site includes multiple sections such as projects, demos, and resume content, all organized for easy navigation. Special attention was given to layout, typography, and responsiveness to ensure the site remains intuitive and visually consistent across devices. This project reflects my approach to building user-focused interfaces that balance design and functionality.`,
+    videoUrl: "https://vento.so/view/need-to-add-video-link-once-i-record-it/embed",
+  },
   {
     title: "Microservices Backend with API Gateway",
     slug: "microservices-backend-with-api-gateway",
@@ -113,7 +113,7 @@ export const demos = [
    tech: [
       "Java",
       "Spring Boot",
-      "REST APIs",
+      "RESTful APIs",
       "API Gateway",
       "Docker",
       "Testcontainers",
