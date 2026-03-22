@@ -35,20 +35,24 @@ export default function Banner() {
             <Text className="mt-6 max-w-2xl text-muted">
               Software developer focused on building practical solutions that improve
               workflows, solve real problems, and make technology easier to use.
-              I have a strong foundation in machine learning, data analysis, 
-              and full-stack development, and I am experienced building data-driven applications, 
-              including machine learning models in Python and full-stack systems using modern web technologies.
+
+              I have a strong foundation in machine learning, data analysis, and full-stack development,
+              with experience in building data-driven applications, including Python-based machine learning models
+              and full-stack systems using modern web technologies.              
+              
               <br />
-              My background in biostatistics and biological research allows me to approach problems analytically, 
-              while my programming experience enables me to translate complex ideas into practical solutions. 
-              I am particularly interested in applying machine learning and data-driven approaches 
-              to real-world problems.
+              
+              My background in biostatistics and biological research allows me to approach problems analytically,
+              while my programming experience enables me to translate complex ideas into practical solutions.
+              I am particularly interested in applying machine learning and data-driven approaches to real-world problems.
+
               <br />
-              Browse through my portfolio to learn more about me and to see examples of my work or watch the video of me taking you through the site.
+              Browse my portfolio to learn more about me, explore my work, or watch a walkthrough of the site.
+              
             </Text>
             <div className="mt-8">
               <Button href="/demos/developer-portfolio-website" variant="secondary" theme="light">
-                Watch Video
+                Watch Portfolio Demo
               </Button>
             </div>
           </div>
