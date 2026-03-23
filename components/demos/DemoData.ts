@@ -3,7 +3,9 @@ export const demos = [
     title: "Machine Learning Classification Models",
     slug: "machine-learning-classification-models",
     description:
-      `Built and evaluated classification models using structured datasets to understand model performance, preprocessing techniques, and evaluation methods. This project focused on applying supervised learning to real-world-style data and interpreting results.`,
+      `Built and evaluated classification models using structured datasets to understand model performance, 
+      preprocessing techniques, and evaluation methods. This project focused on applying supervised learning 
+      to real-world-style data and interpreting results.`,
     tech: [
       "Python", 
       "scikit-learn", 
@@ -12,14 +14,22 @@ export const demos = [
       "Matplotlib"
     ],
     content:
-      `This project explores classification tasks using datasets such as IMDB and Reuters. The focus was on building a complete machine learning workflow, including data preprocessing, feature preparation, model training, and evaluation. I implemented classification models using scikit-learn and evaluated their performance using metrics such as accuracy and loss. The project also involved experimenting with different approaches to data representation and observing how these changes impacted model performance. Through this work, I developed an understanding of how preprocessing, feature engineering, and validation techniques such as train/test splits influence the effectiveness of machine learning models.`,
+      `This project explores classification tasks using datasets such as IMDB and Reuters. 
+      The focus was on building a complete machine learning workflow, including data preprocessing, 
+      feature preparation, model training, and evaluation. I implemented classification models 
+      using scikit-learn and evaluated their performance using metrics such as accuracy and loss. 
+      The project also involved experimenting with different approaches to data representation 
+      and observing how these changes impacted model performance. Through this work, 
+      I developed an understanding of how preprocessing, feature engineering, and validation techniques 
+      such as train/test splits influence the effectiveness of machine learning models.`,
     videoUrl: "https://vento.so/view/f6382ca7-5dae-4997-9bca-73eb847122ef/embed",
   },
   {
     title: "Regression Modeling and Prediction",
     slug: "regression-modeling-and-prediction",
     description:
-      `Developed regression models to predict continuous values using structured datasets, with a focus on model evaluation, validation techniques, and understanding overfitting.`,
+      `Developed regression models to predict continuous values using structured datasets, 
+      with a focus on model evaluation, validation techniques, and understanding overfitting.`,
     tech: [
       "Python", 
       "scikit-learn", 
@@ -28,14 +38,21 @@ export const demos = [
       "NumPy",
     ],
     content:
-      `This project focuses on regression analysis using datasets such as the Boston Housing dataset to predict continuous values. The goal was to understand how machine learning models can be applied to real-world prediction problems. I implemented regression models and evaluated their performance using techniques such as K-fold cross-validation to ensure reliable results. The project also explored how model complexity affects performance, including identifying and reducing overfitting. This work helped build a strong foundation in model evaluation, validation strategies, and the practical challenges of working with real datasets.`,
+      `This project focuses on regression analysis using datasets such as the Boston Housing dataset 
+      to predict continuous values. The goal was to understand how machine learning models can be applied 
+      to real-world prediction problems. I implemented regression models and evaluated their performance 
+      using techniques such as K-fold cross-validation to ensure reliable results. 
+      The project also explored how model complexity affects performance, 
+      including identifying and reducing overfitting. This work helped build a strong foundation in model evaluation, 
+      validation strategies, and the practical challenges of working with real datasets.`,
     videoUrl: "https://vento.so/view/c41575f8-6eb9-4366-9294-fdf3da7cd5bf/embed",
   },
   {
     title: "Smart Inventory Management System 1",
     slug: "smart-inventory-management-system-1",
     description:
-      `Developed a full-stack inventory management system to help small businesses track products, manage orders, and monitor stock levels, with support for search, filtering, and guest order functionality.`,
+      `Developed a full-stack inventory management system to help small businesses track products, manage orders, 
+      and monitor stock levels, with support for search, filtering, and guest order functionality.`,
     tech: [
       "C#",
       "JavaScript",
@@ -46,7 +63,19 @@ export const demos = [
       "PostgreSQL",
     ],
     content:
-      `This project is a database-driven web application designed to support inventory management for small businesses. The system allows users to manage products and categories, track inventory levels, and create basic orders without requiring user authentication. Core functionality includes full CRUD operations for products, including tracking stock quantities and low-stock thresholds. The interface was styled using Bootstrap to create a responsive and user-friendly layout. The application also supports dynamic search, filtering, and sorting, allowing users to quickly locate products by category, price range, or stock status. A guest order system was implemented to allow users to create and review orders, including product selection and total price calculation. The application was built using the ASP.NET Core MVC architecture, separating concerns across models, views, and controllers to ensure maintainability and scalability. The database was designed with relational structure and data integrity in mind, including normalized tables for products, categories, and orders, with appropriate relationships and constraints. Entity Framework Core migrations were used to manage schema changes and support reproducibility. This project demonstrates the ability to design and implement full-stack, database-driven applications with a focus on usability, structured data management, and real-world business functionality.`,
+      `This project is a database-driven web application designed to support inventory management for small businesses. 
+      The system allows users to manage products and categories, track inventory levels, 
+      and create basic orders without requiring user authentication. Core functionality includes full CRUD operations for products, 
+      including tracking stock quantities and low-stock thresholds. The interface was styled using Bootstrap 
+      to create a responsive and user-friendly layout. The application also supports dynamic search, filtering, and sorting, 
+      allowing users to quickly locate products by category, price range, or stock status. A guest order system was implemented 
+      to allow users to create and review orders, including product selection and total price calculation. 
+      The application was built using the ASP.NET Core MVC architecture, separating concerns across models, views, and controllers 
+      to ensure maintainability and scalability. The database was designed with relational structure and data integrity in mind, 
+      including normalized tables for products, categories, and orders, with appropriate relationships and constraints. 
+      Entity Framework Core migrations were used to manage schema changes and support reproducibility. 
+      This project demonstrates the ability to design and implement full-stack, database-driven applications with a focus on usability, 
+      structured data management, and real-world business functionality.`,
     videoUrl: "https://vento.so/view/83ed5a74-7c36-4e6c-8ace-c59e68651b35/embed",
   },
    {
@@ -93,7 +122,8 @@ export const demos = [
     title: "Developer Portfolio Website",
     slug: "developer-portfolio-website",
     description:
-      `Designed and developed a personal portfolio website to showcase projects, skills, and experience, with a focus on clean design, responsiveness, and reusable components.`,
+      `Designed and developed a personal portfolio website to showcase projects, skills, and experience, 
+      with a focus on clean design, responsiveness, and reusable components.`,
     tech: [
       "TypeScript", 
       "React", 
@@ -101,7 +131,14 @@ export const demos = [
       "Tailwind",
     ],
     content:
-      `This project is a custom-built portfolio website designed to present my work, skills, and experience in a clear and structured way. The focus was on creating a clean, modern interface while maintaining flexibility through reusable components. I implemented a component-based architecture using React and TypeScript, allowing for consistent styling and scalable design. The site includes multiple sections such as projects, demos, and resume content, all organized for easy navigation. Special attention was given to layout, typography, and responsiveness to ensure the site remains intuitive and visually consistent across devices. This project reflects my approach to building user-focused interfaces that balance design and functionality.`,
+      `This project is a custom-built portfolio website designed to present my work, skills, 
+      and experience in a clear and structured way. The focus was on creating a clean, modern interface 
+      while maintaining flexibility through reusable components. I implemented a component-based architecture 
+      using React and TypeScript, allowing for consistent styling and scalable design. 
+      The site includes multiple sections such as projects, demos, and resume content, all organized for easy navigation. 
+      Special attention was given to layout, typography, and responsiveness to ensure the site remains intuitive 
+      and visually consistent across devices. This project reflects my approach to building user-focused interfaces 
+      that balance design and functionality.`,
     videoUrl: "https://vento.so/view/need-to-add-video-link-once-i-record-it/embed",
   },
   {
@@ -130,33 +167,33 @@ export const demos = [
       and how backend architectures support scalable applications.`,
     videoUrl: "https://vento.so/view/ea6aea04-2d2a-4111-a219-c47307544a2f/embed",
   },
-  {
-    title: "Object-Oriented Battle Game in Python",
-    slug: "object-oriented-battle-game-in-python",
-    description:
-      `Added a custom game play feature to a command-line battle game in Python 
-      using object-oriented programming, inheritance, exception handling, 
-      and file persistence to create a reusable and expandable game structure.`,
-    tech: [
-      "Python",
-      "OOP",
-      "Inheritance",
-      "File I/O",
-      "Exception Handling",
-    ],
-    content:
-      `This project involved building a Python-based battle game that simulates combat between a hero and a monster using 
-      an object-oriented design. The goal was to refactor procedural game logic into a more structured and reusable architecture using 
-      classes, inheritance, and encapsulation. I created separate Hero, Monster, and Character classes, 
-      using inheritance to share core attributes such as combat strength and health points. 
-      Complex getters and setters were implemented with @property decorators to manage private data safely and consistently. 
-      The project also included exception handling for user input validation, ensuring that game choices were constrained 
-      to valid values without crashing the program. File reading and writing were used to support save/load functionality, 
-      including persistent tracking of game statistics such as monsters defeated across play sessions. 
-      Additional work included using Python’s os and platform libraries to access system-level information, 
-      reinforcing familiarity with built-in modules and environment-aware programming. 
-      This project demonstrates a strong foundation in Python programming, object-oriented design, debugging, 
-      and structuring code for maintainability and future expansion.`,
-    videoUrl: "https://vento.so/view/57c32482-472b-49a9-b0fe-f68d8bcc521a/embed",
-  },
+  // {
+  //   title: "Object-Oriented Battle Game in Python",
+  //   slug: "object-oriented-battle-game-in-python",
+  //   description:
+  //     `Added a custom game play feature to a command-line battle game in Python 
+  //     using object-oriented programming, inheritance, exception handling, 
+  //     and file persistence to create a reusable and expandable game structure.`,
+  //   tech: [
+  //     "Python",
+  //     "OOP",
+  //     "Inheritance",
+  //     "File I/O",
+  //     "Exception Handling",
+  //   ],
+  //   content:
+  //     `This project involved building a Python-based battle game that simulates combat between a hero and a monster using 
+  //     an object-oriented design. The goal was to refactor procedural game logic into a more structured and reusable architecture using 
+  //     classes, inheritance, and encapsulation. I created separate Hero, Monster, and Character classes, 
+  //     using inheritance to share core attributes such as combat strength and health points. 
+  //     Complex getters and setters were implemented with @property decorators to manage private data safely and consistently. 
+  //     The project also included exception handling for user input validation, ensuring that game choices were constrained 
+  //     to valid values without crashing the program. File reading and writing were used to support save/load functionality, 
+  //     including persistent tracking of game statistics such as monsters defeated across play sessions. 
+  //     Additional work included using Python’s os and platform libraries to access system-level information, 
+  //     reinforcing familiarity with built-in modules and environment-aware programming. 
+  //     This project demonstrates a strong foundation in Python programming, object-oriented design, debugging, 
+  //     and structuring code for maintainability and future expansion.`,
+  //   videoUrl: "https://vento.so/view/57c32482-472b-49a9-b0fe-f68d8bcc521a/embed",
+  // },
 ]
