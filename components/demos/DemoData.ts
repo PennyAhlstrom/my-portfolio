@@ -139,7 +139,7 @@ export const demos = [
       Special attention was given to layout, typography, and responsiveness to ensure the site remains intuitive 
       and visually consistent across devices. This project reflects my approach to building user-focused interfaces 
       that balance design and functionality.`,
-    videoUrl: "https://vento.so/view/need-to-add-video-link-once-i-record-it/embed",
+    videoUrl: "https://www.youtube.com/embed/-urNivowOj4",
   },
   {
     title: "Microservices Backend with API Gateway",
