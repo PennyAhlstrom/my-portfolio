@@ -116,7 +116,7 @@ export const projects = [
     githubUrl: "https://github.com/PennyAhlstrom/comp2139-boatshoppe",
     images: [
       {
-        src: "/projects/inventory-management-1.jpg",
+        src: "/images/projects/inventory-management-1.png",
         alt: "Homepage of the inventory management system",
       },
     ],
@@ -138,8 +138,20 @@ export const projects = [
     githubUrl: "https://github.com/PennyAhlstrom/COMP3097_Project_UIDesign",
     images: [
       {
-        src: "/projects/ios-classmate-ui-1.jpg",
+        src: "/images/projects/ios-classmate-ui-1-home.png",
         alt: "Homepage of iOS ClassMate app",
+      },
+            {
+        src: "/images/projects/ios-classmate-ui-2-courses-listview.png",
+        alt: "Listview page of Courses in the iOS ClassMate app",
+      },
+            {
+        src: "/images/projects/ios-classmate-ui-3-edit-task.png",
+        alt: "Pre-populated edit form for a task in the iOS ClassMate app",
+      },
+            {
+        src: "/images/projects/ios-classmate-ui-4-progress-details.png",
+        alt: "Details page of course grade progress in the iOS ClassMate app",
       },
     ],
     featured: false,
@@ -161,8 +173,20 @@ export const projects = [
     githubUrl: "https://github.com/PennyAhlstrom/comp3074project/tree/layouts",
     images: [
       {
-        src: "/projects/android-classmate-ui-1.jpg",
+        src: "/images/projects/android-classmate-ui-1-home.png",
         alt: "Homepage of Android ClassMate app",
+      },
+      {
+        src: "/images/projects/android-classmate-ui-2-courses-listview.png",
+        alt: "Courses Listview of Android ClassMate app",
+      },
+      {
+        src: "/images/projects/android-classmate-ui-3-add-task.png",
+        alt: "Add task form of Android ClassMate app",
+      },
+      {
+        src: "/images/projects/android-classmate-ui-4-reminder-details.png",
+        alt: "Reminder details view of Android ClassMate app",
       },
     ],
     featured: false,
@@ -183,11 +207,20 @@ export const projects = [
       Separate classes were created for core entities, with a shared parent class to manage common attributes. Property decorators were used to control access to private data, and exception handling was implemented to validate user input and prevent runtime errors.
       The system also includes file-based persistence to store and load game progress, demonstrating the ability to manage state across sessions.
       This project highlights strong foundational programming skills and the ability to structure maintainable and extensible code.`,
-    githubUrl: "https://github.com/PennyAhlstrom/comp2152_labs/tree/main/assignment2",
+    // githubUrl: "https://github.com/PennyAhlstrom/comp2152_labs/tree/main/assignment2",
+    githubUrl: "https://github.com/lectureceleb/COMP2152-OpenSourceGroup",
     images: [
       {
-        src: "/projects/python-game-feature-1.jpg",
+        src: "/images/projects/python-game-1-start.png",
+        alt: "Python Game - Beginning of the Game",
+      },
+      {
+        src: "/images/projects/python-game-2-crazy-scientist.png",
         alt: "Python Game - Crazy Scientist Feature",
+      },
+      {
+        src: "/images/projects/python-game-3-fight.png",
+        alt: "Python Game - Fight Sequence of the Game",
       },
     ],
     featured: false,
