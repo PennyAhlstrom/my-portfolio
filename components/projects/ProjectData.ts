@@ -14,10 +14,14 @@ export const projects = [
       "Docker",
     ],
     content:
-      `Classmate is a full-stack capstone project designed using a microservices architecture to support a scalable and modular application. The backend is composed of multiple Java Spring Boot services, each responsible for a specific domain, communicating through RESTful APIs.
-      An API gateway was implemented to centralize routing and manage client requests, providing a unified interface between the frontend and backend services. This approach improves system organization and supports independent development and scaling of services.
-      The frontend was built using React and TypeScript, focusing on a structured component architecture and clear user interaction flows. The system was designed to handle real-world application complexity, emphasizing maintainability, modularity, and separation of concerns.
-      This project demonstrates experience with distributed systems, full-stack development, and designing scalable application architectures.`,
+      `Classmate is a full-stack capstone project designed using a microservices architecture to support a scalable and modular application. 
+      The backend is composed of multiple Java Spring Boot services, each responsible for a specific domain, communicating through RESTful APIs.
+      An API gateway was implemented to centralize routing and manage client requests, providing a unified interface between the frontend and backend services. 
+      This approach improves system organization and supports independent development and scaling of services.
+      The frontend was built using React and TypeScript, focusing on a structured component architecture and clear user interaction flows. 
+      The system was designed to handle real-world application complexity, emphasizing maintainability, modularity, and separation of concerns.
+      This project demonstrates experience with distributed systems, full-stack development, and designing scalable application architectures.
+      To view project planning and management documentation please visit the project github page linked above.`,
     githubUrl: "https://github.com/ClassMate3000",
     images: [
       {
